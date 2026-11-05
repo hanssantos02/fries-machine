@@ -1,5 +1,17 @@
 # USB-only control-logic checkpoint
 
+> **Current save, 6 November 2026:** [Concise assembly checkpoint](ASSEMBLY_CHECKPOINT.md) and the newest dated reports supersede earlier pending prompts below. **Step37 motor soldering has been issued but is not reported complete.** Firmware remains output-free simulation; no powered motor test or Phase3.
+
+> **Latest, 5 November 2026 — reconnection complete by user report:** all reconnected inputs working after Step 26D; Mega simulation retained. Preserve the map below, with no duplicate ground rebuilding or repeat historical fault suite. No new serial trace/exact display sequence or solder inspection provided. Current Step 26 is adapter label/plug and prior measurement-condition review before any motor connection. Earlier pending-reconnection banners below are historical.
+
+> **Latest, 5 November 2026 — Step 26D pending:** user reports buttons connected and asks to proceed. Preserve working LCD, existing shared GND and button22/23/24; no new physical inspection/function pass. Restore index NO26/28/30, COM shared GND, NC unused with all power off, then await wiring report before a focused restored-circuit check. No new firmware/upload or powered actuator work.
+
+> **Latest, 5 November 2026 — Step 26C pending:** user confirms existing shared connections; preserve common ground without rebuilding it. No measured continuity claim. Current checkpoint is unpowered flavor buttons D22/D23/D24, other contact shared GND. LCD working and retained simulation are user-confirmed; restored inputs await functional checks.
+
+> **Latest result, 5 November 2026 — Step 26B pending:** user reports reconnected LCD working and confirms only the breadboard was reused, so Mega firmware remains unchanged by user report. No new flash or serial capture. Shared signal ground, buttons and indexes await reconnection; next checkpoint is one spare Mega GND to a selected breadboard rail section with all power off. Earlier reconnection uncertainties below are superseded by this report.
+
+> **Reconnection update, 5 November 2026 — Phase 2, Step 26A:** user removed breadboard connections for another project and requests guided restoration before adapter review. This document records historical test passes and the last known uploaded sketch, not verified present wiring/firmware. Current checkpoint: reconnect LCD only while all power is disconnected, report endpoints, and clarify whether a different sketch was uploaded. See [BUILD_PROTOTYPE.md](BUILD_PROTOTYPE.md). Recheck the restored connections before accepting current operation.
+
 **28 October 2026, Asia/Manila — PHASE 2, Step24 complete.**
 
 The planned USB-only input/display/software checks passed. **The full working machine prototype is not complete, and Phase3 has not started.** Do not repeat these checks unless a change, failure or unresolved concern justifies it.

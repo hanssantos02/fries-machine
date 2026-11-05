@@ -1,0 +1,61 @@
+{
+  "recorded_date": "2026-11-05",
+  "timezone": "Asia/Manila",
+  "photos": [
+    {
+      "file": "01-motor-label.jpg",
+      "sha256": "8967294e8678a6772a1eb99278a3d402161231114d7dce97ffb17c86a8b73b91",
+      "observation": "Label: ZENG WHCD JGB37-520, DC 12V/22RPM, date 2026-10-16. No running/stall test."
+    },
+    {
+      "file": "02-fuse-holder.jpg",
+      "sha256": "71d9ae7ec58a9a11a99af0784e2dc7f303a590c9779a722226f9c5f007737799",
+      "observation": "Blade fuse seated in inline holder; marking appears to be 2, consistent with planned 2A. Voltage, manufacturer, curve and holder lead rating not established."
+    },
+    {
+      "file": "03-mosfet-module.jpg",
+      "sha256": "7b2cde0b653699174cfacbe2f736a32d9b321da9063e98cdb1bfa6f913a50f9a",
+      "observation": "Screw-terminal MOSFET-style module consistent with prior photographed module; exact semiconductor marking not read reliably."
+    },
+    {
+      "file": "04-dc-connector.jpg",
+      "sha256": "3550d96f2456e9a543d873e985fc99a14b28cd60e03cc7e39aef07fb813683ae",
+      "observation": "Barrel-to-screw connector with moulded minus left and plus right in this view. Mating dimensions, current rating and actual contact mapping not measured."
+    },
+    {
+      "file": "05-red-led.jpg",
+      "sha256": "e71da6e4a68b93c9aeccdbcbb02b78ce16b5ba90fa2ca1041e55408009945f24",
+      "observation": "One red two-lead indicator LED, not the intended motor flyback rectifier. Exact size/electrical rating not supplied."
+    },
+    {
+      "file": "06-adapter-label.jpg",
+      "sha256": "4a8be8fab6eac6320102692a43ae016cd39da1650823ce443ee6f48b78aac679",
+      "observation": "Factory-enclosed appearance; label MODEL 1250, INPUT AC100-240V 50/60Hz, OUTPUT 12V DC 5A; symbol centre-positive. Label-implied 60W, not a load test or independent certification."
+    },
+    {
+      "file": "07-axial-diode.jpg",
+      "sha256": "d99764093f4cd9791f9eda824eed056becf16d7b7dfb8656fa7d48ac5c94a372",
+      "observation": "Black axial rectifier-style diode, pale cathode band on upper-right end in supplied orientation. Body marking appears consistent with prior SR5100 stock but complete code/manufacturer not reliably legible. No electrical test result supplied."
+    },
+    {
+      "file": "08-multifunction-wire-tool.jpg",
+      "sha256": "b3662bf41d361c58fb6480eef2d843536932548869922fef01aee935b3b005df",
+      "observation": "Grey-handled multifunction stripper/pliers; serrated tip, stripping recesses, cutter area, M3/M3.5/M4/M4.5/M5 holes, latch and lower shaped openings visible. Exact brand/model, die compatibility and live-work insulation certification not identified."
+    },
+    {
+      "file": "09-motor-rear-terminals.jpg",
+      "sha256": "e82af0195383f53ff24bd5b04458caff24d619365fdaa2b403864a9b30626d9a",
+      "observation": "Two bare motor electrical terminals on plastic rear end cap; no reliable plus/minus marking visible from this angle. No leads or diode attached."
+    },
+    {
+      "file": "10-dc-connector-wired.jpg",
+      "sha256": "5e1a1d9921ebcbbd78ccbf185afda9dde714c3039534d245b8c8228abbe4595e",
+      "observation": "Red and black leads installed at DC connector, consistent with marked positive and negative positions. Blade fuse pictured separately on bench; numeric/DC ratings not newly established. No independent retention/current test."
+    },
+    {
+      "file": "11-driver-supply-wired.jpg",
+      "sha256": "43f8cc3ca6cb83da6ce90ecada3d52d4720aa4d76a106c1aab17c67cc8f90907",
+      "observation": "Red and black supply leads occupy outer blue power-block entries; middle LOAD and green control block empty. Consistent with previous intended mapping; labels/inside clamp are not fully visible. No multi-conductor rating or circuit acceptance inferred."
+    }
+  ]
+}

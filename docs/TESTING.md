@@ -1,5 +1,81 @@
 # Prototype tests and results
 
+> **Current save, 6 November 2026:** [Concise assembly checkpoint](ASSEMBLY_CHECKPOINT.md) and the newest dated reports supersede earlier pending prompts below. **Step37 motor soldering has been issued but is not reported complete.** Firmware remains output-free simulation; no powered motor test or Phase3.
+
+## Step37 — motorA positive/cathode solder joint: PENDING
+
+Power off/fuse out, label motorAbenchpositive andBfutureLOAD. AttachMOTOR+and bandedSR5100lead toA only; other lead free/isolated, B/LOAD/control empty. Await cooled-joint photo/band placement/gentle-retention report. No motor operation or complete flyback pass. Instructions in BUILD_PROTOTYPE.md Step37.
+
+**Steps35/36 result, 6November2026:** user replies “yes, working as intended and secured” to expected beep/beep/no-beep plus DRIVER+retention. Record qualitative PASS for two positive paths, negative isolation (as tested before module reconnection) and secured DRIVER+wire. No numeric readings/photo/rated-load proof. Earlier pending status below is superseded; do not repeat without a new reason.
+
+## Step36 — taped junction and DRIVER+ reconnection: PENDING
+
+User reports “done” and electrical tape already on junction. Record insulation method, no visual inspection, no individually stated Step35 results. Ask expected beep/beep/no-beep confirmation alongside DRIVER+retention report; do not automatically unwrap tape/retest or mark numeric/function pass. No energizing. Conditional tape coverage/support checks and single-lead reconnection in BUILD_PROTOTYPE.md.
+
+## Step35 — soldered positive junction continuity/isolation: PENDING
+
+6November2026. All power unplugged/fuse out, pigtails/driver+and motor disconnected. Metercontinuity baseline first. Bare red-stem/solder junction→DRIVER+ end shouldbeep/lowresistance; →MOTOR+ end shouldbeep/lowresistance; →DCconnector− shouldnotbeep/open. Await three reported results before insulation/reconnection. No measured result, load/thermal/fuse acceptance yet. BUILD_PROTOTYPE.md Step35 gives contact/isolation details and already-covered-joint exception.
+
+## Step34 — soldered positive junction: assembly/retention reported
+
+User says “done, and secured” on6November2026. Accept assembly/gentle-retention report; no joint photograph, exact wire lengths or electrical readings supplied. No independent visual inspection claim. Earlier pending text below is superseded by this report; no repeat soldering requested.
+
+User selects existing wire/solder/heat-shrink instead of a connector. With power unplugged/fuse removed, prepare one-input/two-output junction from red holder output to labelled DRIVER+/MOTOR+ pigtails. Far ends insulated/disconnected, driver+temporarily empty, negative return intact. Await close photo of cooled uncovered joint and gentle-pull retention of all three leads before shrinking/connecting. No assembly, electrical continuity or power pass yet. Details in BUILD_PROTOTYPE.md Step34.
+
+## Step 33 — motor contacts and fused-positive junction review: PENDING
+
+**Photos received5November2026:**09–11 show bare motor contacts with no readable polarity markings, supply wiring visually consistent with intended outer+/− entries and centreLOAD/control block empty. Fuse is pictured separately. Photo collection complete; actual junction selection/assembly, visual details of clamps and electrical/rated-load checks still pending. Asked availability of3port internally common connector; soldered insulated junction is fallback with existing supplies. No new wiring or power directed. Original pending-photo request below superseded.
+
+Request motor-rear electrical-terminal photo and current connector/fuseholder/driver wiring photo, all unplugged/fuse out. No photo received for this checkpoint, no motor/diode/control hookup or power directed. Visual inspection does not establish current rating or permit undocumented multi-conductor clamps.
+
+**Step32 result, 5 November 2026:** user reports “done secured” and confirms18AWG used on connector−→driverPOWER−. Record wiring/retention by report, no photograph or numeric resistance/loaded test. Earlier pending Step32 text below is superseded by this result; no20AWG substitution recorded installed.
+
+## Step 32 — power-negative wire retention: PENDING
+
+Owned18AWGblack stranded wire from DCconnector− to driverPOWER−, all power disconnected/fuse removed. Check actual−labels (not controlGND/LOAD), clamping/no stray strands and gentle-pull retention at both ends. No result yet; no load/function test or rating qualification.
+
+## Step 31 — driver positive-feed connection: completed by user report
+
+User says “secured” after holder output→driverPOWER+ and retention instructions. Accept connection by report; no new photo/measurement or rated-current acceptance. Original pending procedure below is superseded. Fuse stays out, assembly unpowered.
+
+Remaining holder tail→driver POWER+ with all power disconnected and fuse removed; other terminals/motor/control empty. Await gentle-pull/terminal confirmation. No electrical function/current-rating test or permission to power.
+
+## Step 30 — first fuse-holder connection: completed by user report
+
+User says “done and secured” after loop-cut/preparation, first lead→DCconnector+ and gentle-retention instructions. Accept connection/retention by report; no new photo or numeric data supplied. Fuse remains removed and assembly unpowered per issued checkpoint. Prior pending text below is superseded.
+
+User confirms uncut loop. Latest manual preparation is one midpoint cut while holder fully disconnected/fuse removed, then one tail to loose connector+ and other tail kept insulated. Check clamp/no stray strands/gentle retention and wait for photo/report. Earlier stop-for-identification satisfied; actual preparation remains pending. No powered test or fuse/holder qualification implied.
+
+All power unplugged, fuse removed, adapter output disconnected; first already-free holder lead to connector+ only. If cable is still a loop, stop/report before cutting. Request connection photo/gentle-pull retention; no result yet, no energizing/current-rating claim.
+
+## Step 29 — disconnected DC connector mapping: PASS by user report
+
+User says “working as intended” after the three issued checks on5November2026. Accept+centre and−outer continuity and+to− isolation by report. No numerical resistance, connector ampacity or live test supplied. Prior procedure below is superseded; do not repeat without a new reason.
+
+Completely disconnected connector, metercontinuity with blackCOM/redVΩ; tip-touch/separated baseline first. Expected+terminal↔centrecontact beep/lowresistance; −terminal↔outercontact beep/lowresistance; +↔− no beep/open. Await three actual results. No powered circuit measurement/current-capacity claim. BUILD_PROTOTYPE.md Step29 has contact-access/short-avoidance instructions.
+
+## Step 28 — isolated diode directional check: behavior reported
+
+**Latest result, 5 November 2026:** user confirms SR5100 and reports redunbanded/blackbanded shows a result, reverse shows none. Consistent with expected directional behavior if reverse display is OL/open. Exact numeric forward result, reverse display and meter mode not restated. Do not mark numeric0 as reverse blocking or infer manufacturer/rated-current acceptance. Earlier pending text below records the issued procedure, superseded by this qualitative report; no identical repeat requested.
+
+New axial-diode photo07 shows pale cathode band; complete code not reliably legible. Diode must be fully disconnected, meter blackCOM/redVΩ-diode, diode mode. Record redanode/blackcathode (normally forward-drop number), then reversed (normallyOL); transcribe code. No readings supplied yet. Do not apply an ordinary silicon-diode fixed voltage window to an unidentified Schottky part. Basic directional pass cannot establish motor-current/thermal suitability or authenticity. Method/source in BUILD_PROTOTYPE.md Step28; no powered circuit measurement.
+
+> **Latest, 5 November 2026:** adapter label observed12VDC5A/centre-positive, MODEL1250; printed specs only, reported earlier12V/store test retained. Motor label12V22RPM; installed fuse appears2. No new electrical/load/continuity/thermal test. Red photo05 component is an indicator LED, excluded as motor flyback protection. Next identify one owned axial diode by body code/band while disconnected. Evidence archived under motor-review-2026-11-05.
+
+> **Latest adapter report, 5 November 2026:** user says adapter was checked at the physical store. Accept as a reported check, with no claim about current-capacity, polarity, load, ripple or protection results not supplied. Do not repeat the earlier 12 V reading without a specific new reason. Step 27 unpowered motor-channel parts/marking review is pending; no motor test or new tool/device command.
+
+> **Latest result, 5 November 2026:** restored USB logic/input wiring works by user report (“all connected and working”) after Step 26D. No independent manual-event serial/display trace, solder inspection or repeated fault-suite results supplied. Accept reconnection and proceed to adapter review; do not repeat historical checks without a new reason. This result covers no adapter load, motor operation, heater, basket or safety-stop function. No new firmware/upload.
+
+> **Latest, 5 November 2026 — Step 26D:** buttons connected by user report; no solder photo/retention measurement or restored button input test supplied. Respect request to proceed without repeating the first-joint checkpoint. Next is unpowered index COM→shared GND, NO→D26/D28/D30, NC unused. After wiring report, perform focused restored input/LCD/simulation checks. Existing historical passes do not prove new endpoints; no new function pass or upload yet.
+
+> **Step 26C first-joint checkpoint, 5 November 2026:** stranded 20 AWG and heat-shrink confirmed. Joint pending: inspect cooled solder/plastic, gentle retention and normal button return before covering/further assembly. No result yet. After both leads are finished, test the fully isolated button released/pressed/released for open/closed/open; original contact passes do not verify the newly soldered assembly. No continuity mode on powered circuitry.
+
+> **Latest, 5 November 2026 — Step 26C:** user states shared connections already exist; keep existing ground rather than repeating rail construction. No new continuity test or input pass. Unpowered button reconnection on D22/D23/D24 to shared GND is pending; LCD function and retained firmware are already user-confirmed.
+
+> **Latest result, 5 November 2026:** Step 26A LCD reconnection/function PASS by user report (“lcd working now”); user confirms Mega code unchanged and only breadboard reused. No display text, serial trace or new upload supplied. Step 26B ground feed is now issued but not reported complete or measured. Buttons and index inputs remain pending after reassembly.
+
+> **Latest, 5 November 2026 — Step 26A:** user removed breadboard connections for another project. Historical passes below remain recorded; the reassembled circuit has not been checked. First pending checkpoint is unpowered LCD wiring verification, followed by confirmation of whether the Mega was reprogrammed. Focused checks after reconnection are justified by the changed wiring; do not infer a new pass from old evidence. No powered reconnection test or new upload has occurred.
+
 > **Current state, 5 November 2026:** Step24 USB-only logic checks passed; Step25 procurement review saved. Step26 is pending adapter label/polarity review. Adapter is now owned and user reports measured12V; current/power rating, polarity and loaded suitability are not yet established. October missing-adapter/pending-test statements below are historical. Driver GPIO and motor-power wiring remain unassigned. See [current handoff](handoffs/2026-11-05-assembly-resume.md) and [USB checkpoint](USB_LOGIC_CHECKPOINT.md).
 
 

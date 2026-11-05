@@ -1,5 +1,9 @@
 # Physical-store purchases
 
+> **Current save, 6 November 2026:** [Concise assembly checkpoint](ASSEMBLY_CHECKPOINT.md) and the newest dated reports supersede earlier pending prompts below. **Step37 motor soldering has been issued but is not reported complete.** Firmware remains output-free simulation; no powered motor test or Phase3.
+
+**Latest receipt evidence, 5 November 2026:** adapter label now confirmed12VDC5A/centre-positive, MODEL1250 (60W nameplate-implied); no duplicate adapter or repeated label request. One red two-lead indicator LED also photographed: check its dimensions/specification for A10 reuse before buying another red LED. Green LED/buzzer/resistors/transistor ownership remains unreported. Red LED is not the motor flyback diode; existing black axial diode stock remains to identify. No fresh quote, added purchase or revised budget.
+
 Updated 5 November 2026, Phase 2 Step 26 pending. User knows a physical supplier. Adapter now owned with user-reported 12 V measurement; other received items tracked in INVENTORY.md. Prices pending actual store quote/receipt.
 
 ## First flavor-motor prototype order

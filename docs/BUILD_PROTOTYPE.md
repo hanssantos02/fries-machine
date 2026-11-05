@@ -1,5 +1,344 @@
 # Prototype build — work with received materials
 
+> **Current save, 6 November 2026:** [Concise assembly checkpoint](ASSEMBLY_CHECKPOINT.md) and the newest dated reports supersede earlier pending prompts below. **Step37 motor soldering has been issued but is not reported complete.** Firmware remains output-free simulation; no powered motor test or Phase3.
+
+## Current Step37 — MOTOR+ and banded diode lead to motor terminal A
+
+**Steps35/36 result, 6 November2026:** user confirms working as intended/secured in response to beep/beep/no-beep and DRIVER+retention question. Record continuity of both positive branches, isolation from connector− and DRIVER+clamping by user report. No numeric resistance, photo or rated-current test supplied. Preserve taped junction and negative return; don't repeat completed tests without a reason.
+
+The SR5100 is the flyback rectifier. In the intended one-direction low-side circuit, its **banded cathode connects to motor positive**; its unbanded anode will later connect to the motor's switched return/LOAD side. The band is a direction mark, not a universal instruction to connect to supply negative. Reversing this diode can make a short across the supply when the driver turns on. Attach only its positive side at this checkpoint and keep power off.
+
+### Terminal identification
+
+Photo09 shows two bare rear motor contacts, but no reliable factory polarity marking. If an actual+mark is now visible, use that contact asA and show it if uncertain. Otherwise choose one contact and label it **A / bench positive**, leaving the other **B / future LOAD**. This is a chosen bench polarity, not a claim about factory markings or clockwise rotation. No motor direction/load test yet. Do not reverse the adapter later to change direction; both motor lead assignment and diode orientation would need coherent review.
+
+| Part | Connect to | Purpose |
+|---|---|---|
+| Lead labelledMOTOR+ from fused junction | Motor terminalA | Future fused positive feed to motor |
+| SR5100 lead at white/silver-banded end | Same motor terminalA | Cathode at positive node for turn-off protection |
+| Unbanded diode lead | Leave free/isolated this step | Future anode connection atB/LOAD |
+| Motor terminalB | Leave empty | Return lead follows at next checkpoint |
+
+### First motor solder joint only
+
+**Before soldering:** unplug USB, adapter wall and output; fuse remains removed. LOAD/control terminals empty. Secure motor on a heat-resistant nonconductive support without crushing its casing, gearbox or rear plastic. Keep shaft clear; do not hold the hot joint with fingers. Use a stable iron stand, eye protection and ventilation/fume extraction, avoid fumes and use electronics solder/flux only. Hot copper/iron can burn; prolonged heat can loosen the contact in the plastic end cap. Wash hands after solder handling.
+
+1. IdentifyMOTOR+tail by its label (black insulation does not mean negative) and terminalA as above. Adjust stripped length only enough to make a tidy attachment to the actual contact; don't cut strands or leave excessive bare conductor. If contact is inaccessible or damaged, stop and report rather than force it.
+2. Position the diode near the motor's rear with its body/leads clear of the metal case, ventilation openings, shaft and moving parts. Shape only the leads, supporting them with pliers rather than levering against the diode body. Leave enough lead/slack to reach both contacts later without tension. Do not cut a lead too short to reach/support the futureBconnection.
+3. If heat-shrink sleeves will be used, pre-position them on relevant leads away from the hot joint before soldering. Do not cover the joint yet; properly applied electrical insulation tape may instead be used after inspection for this dry bench setup. Planned insulation must cover the exposed contact and diode leg without interfering with the shaft/vents.
+4. Bring theMOTOR+wire and the diode's **banded-end lead** together at terminalA. Form a light retaining bend/hook around the actual contact if its geometry allows, without bending or twisting the motor contact itself. Support the diode/wire weight in a holder. Do not wrap bulky conductors with force or solder a loose plastic jumper socket to the pin. If they cannot be positioned securely, send a photo before improvising.
+5. With a clean lightly tinned iron tip, heat contact/conductors and add electronics solder until it wets all intended metal. Use only enough solder/heat to make the joint; no large blob or long cooking of plastic. If solder does not flow promptly, remove heat, let it cool and investigate tool/flux/contact cleanliness. Stop for moving pin, softened plastic or damaged insulation. Keep solder clear of terminalB and the motor case.
+6. Let the joint cool naturally without movement. Inspect banded lead atA, solder bonded to contact/wire/diode lead, no stray strands/bridge/case contact and no damaged plastic. Gently test lead retention while supporting the motor contact, without levering/bending it. Keep the other diode lead disconnected, isolated fromA/case, and the motor'sBterminal empty.
+
+**Check before continuing:** request a close photo showing the cooledAjoint, band position and both motor contacts, plus whether the wire/diode lead stay attached under a gentle check. Stop before covering, makingBjoint, inserting fuse or connecting power/control. One-ended diode attachment is not a completed flyback circuit. Return lead/diode anode, joint insulation/strain relief, module topology/ratings, safeOFF and secured unloaded motor/disconnect remain later checkpoints.
+
+Reference: [Adafruit motor flyback-diode orientation example](https://learn.adafruit.com/adafruit-arduino-lesson-13-dc-motors?view=all). Its band-to-positive principle applies; its5V/breadboard/transistor wiring and motor ratings are not this12Vproject's wiring or ratings.
+
+## Current Step36 — reconnect DRIVER+ after junction insulation
+
+**Latest report, 6 November2026:** user says junction done and already covered with electrical tape. Record tape in place, no new photo. Don't automatically unwrap it just to return to the earlier inspection stage. The three Step35 results were not individually stated; ask whether they were beep/beep/no-beep alongside this connection's completion report. Do not record a measured pass or energize on ambiguous “done.” Further unpowered wiring can proceed independently of that clarification.
+
+Electrical insulation tape is acceptable for this dry low-voltage bench junction if it fully encloses all bare joint metal, overlaps intact insulation and stays secure. Check coverage from all sides, especially the gap between the two outgoing wires. No exposed strand, lifted flap or sharp point may protrude. The cooled solder joint must already be mechanically firm; tape cannot make a loose joint sound. Provide support/slack so cable movement does not pull on the splice. This does not qualify final fryer-area heat/moisture resistance. If insulation is incomplete/uncertain, stop and show the issue rather than applying power. Heat-shrink was planned, not mandatory regardless of the actual insulation outcome.
+
+1. Keep USB/adapter unplugged, adapter plug out of the connector and fuse removed. Motor, SR5100, LOAD/control wiring remain disconnected. Leave negative-return wire intact.
+2. Identify the outgoing lead labelledDRIVER+, distinguishing it from the other positive lead labelledMOTOR+. Black insulation does not make these negative wires. Use labels and the intended node map; if lead identity is lost, resolve it before connecting.
+3. Fit onlyDRIVER+into the modulePOWER+terminal on the three-way+, LOAD,−block. Use existing short untinned stripped end, adjusting to actual clamp depth if needed. Clamp copper, not insulation, with no stray/excess exposed conductor and one wire per terminal. Do not force a poor fit, remove strands or solder-tin the screw-clamped end.
+4. Tighten without stripping the screw and gently pull the insulated lead while supporting the connector. Keep the unusedMOTOR+tip individually insulated and disconnected. Do not attach motor or insert fuse.
+
+**Check before continuing:** ask whetherDRIVER+is secured and whether previous junction results were beep (junction→DRIVER+), beep (junction→MOTOR+), no beep (junction→connector−). If earlier tests were not performed or displays differed, record that and prepare a targeted accessible test without unnecessarily stripping the taped splice. No repeated tests needed if user clearly confirms expected results. This step does not authorize power, control wiring, flash or motor attachment.
+
+## Current Step35 — check the soldered positive junction before insulating
+
+**Step34 result, 6 November2026:** user reports junction “done, and secured.” Accept assembly/gentle-retention by report; no close photo or measured electrical result supplied. Do not claim independent solder inspection or repeat the soldering procedure. Driver+was released for preparation; both branch far ends are still disconnected, negative return retained, fuse out. No power is permitted.
+
+1. Keep adapter unplugged from wall AND connector, USB unplugged, fuse removed, motor/diode/control disconnected. Keep both DRIVER+/MOTOR+ far ends disconnected and driverPOWER+empty so the junction is isolated from module electronics. Leave sleeve back for access to the cooled solder joint.
+2. Inspect for loose copper strands, sharp spikes, damaged/melted insulation or a conductor moving in the joint. If any defect is present, stop and show it; do not hide it under tubing. If tubing was already shrunk, report that before removing/cutting anything; adapt the test access instead of automatically undoing insulation.
+3. Strip only about4mm from each labelled branch far end to expose probe contact. Keep all strands and keep ends away from each other/the negative assembly. Actual clamp/motor attachment strip lengths can be adjusted at their later steps. Do not solder-tin the future DRIVER+ screw-clamped end.
+4. Meter blackleadCOM/redleadVΩ, not current jack; select continuity/beeper mode. Touch tips together to establish beep/lowresistance and separate them to establish open. If the baseline fails, correct meter mode/lead contact before judging the joint.
+5. Touch one probe to the bare solder junction where the red stem joins the pigtails, the other to the labelledDRIVER+ far end. Expected beep/lowresistance near the probe baseline. Swap colours if easier; this is a passive conductor path. Record result.
+6. Keep the first probe at the same red-stem junction; test the labelledMOTOR+ far end. Expected beep/lowresistance. Record result.
+7. Test that junction against the DC connector terminal marked− (or verified driverPOWER−). Expected no beep/open. This checks for accidental connection of positive junction/loose strands to the negative return, with driver+and motor still disconnected. Prevent probe/loose-wire contact from creating a false short.
+
+**Check before continuing:** request the three results in order (DRIVER+, MOTOR+, negative isolation). Stop before heat shrinking, connecting a branch, inserting fuse or power. Passing continuity cannot qualify current capacity/thermal performance, fuse coordination or the full circuit. After the report, inspect/insulate/support the junction and reconnect the DRIVER+tail as a single conductor at its own checkpoint.
+
+## Current Step 34 — solder the fused-positive Y junction
+
+5 November2026. User confirms no3port junction connector and chooses existing wire, solder and heat-shrink. This replaces the direct fuse-output→driver+ segment with one input and two outgoing leads, keeping one conductor under the driver's screw. No new purchase is needed for this selected method. No junction assembly is reported complete yet.
+
+### Planned connections — all one positive electrical node
+
+| Lead | Destination | Material / identification | Why |
+|---|---|---|---|
+| Incoming stem | Existing red output tail of first fuse holder | Existing holder wire; fuse remains upstream and removed | Brings the protected branch supply to the split |
+| Branch1 | Future driverPOWER+ connection | Short18AWGstranded-copper pigtail, labelDRIVER+ / POS+ | One conductor fits the driver's+clamp |
+| Branch2 | Future selected motor positive connection | Short18AWGstranded-copper pigtail, labelMOTOR+ / POS+ | Supplies motor positive from the same fused branch |
+
+```text
+connector+ -- holder[FUSE OUT] -- red output -- soldered junction -- DRIVER+ tail
+                                                               └-- MOTOR+ tail
+The two tail FAR ENDS remain insulated and disconnected for inspection.
+Driver+ is temporarily empty; driver− return remains connected as before.
+```
+
+### Prepare only this junction, then stop for inspection
+
+**Before work:** unplug USB and adapter from wall/connector; remove fuse. Leave motor and diode disconnected. Clear metal offcuts from the work surface. Use a stable iron stand and heat-resistant surface, eye protection, ventilation/fume extraction, and avoid breathing solder fumes. Secure wires in a holder away from fingers/plastic, without crushing insulation. Use electronics solder/rosin or electronics no-clean flux, never plumbing acid flux. Keep hot tip/barrel away from skin, insulation and the fuse-holder plastic; wash hands after handling solder, especially leaded solder.
+
+1. Loosen driverPOWER+ and release only the red fuse-holder output lead. Leave the DCconnector+ feed and black negative-return connections intact. The released red tail is the incoming stem. Do not cut the existing negative return or alter input/LCD wiring.
+2. Cut two short18AWGstranded-copper wire pieces that reach the driver and intended nearby motor with slack (for example around10–15cm for the nearby driver,20–30cm for the nearby motor; adjust to actual layout rather than pull wires taut). They are positive leads even if insulation is black: label both ends POS+ and destinations DRIVER+/MOTOR+. Leave their far ends unstripped and disconnected. If existing wire/insulation is unsuitable or reach needs much longer leads, report before substituting a thin jumper or assuming ratings.
+3. Strip roughly8mm from one end of each pigtail and from the freed red stem, adjusting to make a compact mechanically engaged joint without nicking strands. The previous screw-terminal stripped length may need slightly more insulation removed. Keep all strands; do not remove strands to reduce bulk. Do not strip the pigtail far ends yet.
+4. Before joining, slide an adequately sized heat-shrink sleeve onto the loose red stem and park it well away from the soldering area. It must later pass over the whole joint and overlap intact insulation on both sides (single stem and paired branches), shrink to a snug insulated covering and leave no copper exposed. A sleeve around25–30mm long can suit a compact roughly8mm joint, but actual bundle diameter/shrink ratio determine fit; this is not a fixed required tube size. If available tubing cannot cover/grip the arrangement, stop and show the tubing rather than assemble an uninsulatable joint. Do not slit tubing to force it over the connection.
+5. Align the two pigtails side by side with stripped ends pointing together; twist their exposed copper into one neat pair. Form that pair and the red stem into opposing hooks, link them and wrap the free copper around the mating bundle so they remain mechanically engaged without being held by molten solder. The red stem extends one way and the insulated pigtails extend the other, allowing the sleeve to slide across the finished joint. Keep it compact and smooth, with no spikes/broken strands. Do not make a same-direction three-wire end-cap that leaves an open exposed tip or hold three loose ends together using only a solder blob. A light pre-solder check should not separate the joint.
+6. Secure the joint; clean/lightly tin the iron tip. Heat the copper junction, then feed electronics solder onto the heated copper until it wets all three conductors. Use enough to bond/fill the joint without a large ball. Do not drip solder onto a cold bundle or let solder wick far under insulation to make long stiff leads. If solder will not wet, stop, cool and check tool/flux/cleanliness; don't keep cooking insulation. Hold still while solder sets and allow natural cooling before touching it.
+7. Once cool, inspect for bonded conductors, no loose strands or melted insulation, and gently pull each of the three insulated leads while supporting the joint. No wire should move or separate. Matte lead-free solder is not automatically a fault; surface shine alone does not prove a sound bond. Keep sleeve parked back so the bare joint is visible in a close photo. Keep both pigtail far ends insulated/disconnected, driver+empty, fuse out and all power unplugged.
+
+**Check before continuing:** ask for a close photo of the cooled, uncovered junction and whether all three leads stay secure under a gentle pull. Stop before shrinking the sleeve, reconnecting driver+, motor attachment or power. Next check/insulate the joint, verify electrical paths and add strain relief before completing connections. Electrical tape/heat-shrink do not replace a sound metal joint; solder must not be added to future screw-clamped ends. This bench-splice step does not qualify the entire supply/protection, motor mechanics or safeOFF logic.
+
+Reference: [Adafruit3way wire-splice method](https://learn.adafruit.com/make-it-glow-how-to-solder-neopixels-a-beginners-guide/splicing-wires). Project lead lengths, labels, inspection staging and protection scope above are our build choices, not manufacturer requirements for this generic module.
+
+## Current Step 33 — inspect motor terminals and plan fused-positive junction
+
+### Photos received — choose the positive junction method next
+
+Photos09–11 in [evidence manifest](assets/motor-review-2026-11-05/manifest.json) now show the requested parts. Motor rear has two bare electrical contacts; no dependable+ /− marking is readable in this angle. Connector red/black and driver's outer red/black power leads are consistent with intended map; centreLOAD/control block remain empty. A fuse is pictured separately. No new measured mapping, terminal clamp rating or rated-load result is inferred. The earlier photo request below is satisfied.
+
+Next establish whether the user owns a small3port connector whose entries are electrically common (for example, a suitable lever wire connector). A multi-position terminal strip may have isolated pairs, so inspect the actual part instead of assuming it joins all entries. If present, request a photo/model and verify compatibility with all conductors. If absent, a properly prepared soldered insulated junction using existing wire/heat-shrink is an alternative; do not impose a new purchase solely to branch one bench channel. An availability question is pending; no junction method has been selected/performed.
+
+Intended node, conceptual only:
+
+```text
+Fuse-holder output ---- positive junction ---- short lead to driverPOWER+
+                                        └---- lead to future motor positive
+```
+
+This junction replaces the current direct fuse-output→driver+ segment when the method is chosen. Each module screw should retain one suitable conductor unless documented otherwise; do not stuff another lead into its occupied+terminal. The fuse remains upstream of both branches. Keep motor disconnected and no terminal polarity assignment yet. Clear the visible metal offcuts from the work area before later electrical testing. Keep adapter/USB unplugged and fuse removed while handling; no motor power, control wiring or flash is issued here.
+
+**Step32 result, 5 November 2026:** user reports both negative-return ends secured and confirms using18AWG. Accept DCconnector−→driverPOWER− as connected/retained by user report; no new photo or electrical load/current-rating test. The20AWG alternative was discussed but is not recorded installed. Keep completed power leads and input/LCD wiring intact.
+
+Before attaching motor leads and the flyback diode, inspect the actual motor contacts and existing terminal layout. On the intended low-side driver arrangement, the fused-positive node must serve both the driver+ and motor positive; the motor's other side goes to LOAD, not straight to supply−. A photo of a terminal cannot certify that it accepts multiple conductors: choose a documented suitable junction/termination or properly prepared insulated pigtail method later, rather than assuming two wires can share a screw. No hookup is issued from this conceptual description; actual module topology/ratings are still to resolve before powered use.
+
+1. Keep USB and adapter unplugged, adapter output out of the connector and fuse removed. Motor, diode and control terminals remain disconnected.
+2. Request a close photo of the selected motor's rear/electrical end showing both contact lugs or existing leads, any+ /−markings and surrounding plastic. The previous motor-front label photo establishes12V22RPM, not terminal attachment details.
+3. Request a clear photo of the currently assembled DCconnector, fuseholder and driver, with wires/terminal labels/entry points visible. Do not dismantle successful connections solely for the photo. If underside labels are needed, support the unpowered module without straining its wires.
+
+**Check before continuing:** wait for photos. Use them to choose motor/diode attachment and the secure fused-positive split; do not tell the user to push a second conductor into an undocumented occupied terminal. Review for obvious stray strands/insulation clamping, keeping visual review distinct from measured current/thermal acceptance. No repeat store voltage/connector continuity/diode test without a specific new cause. No fuse replacement, power, flash or new GPIO yet.
+
+## Current Step 32 — DC connector negative to driver power negative
+
+**Wire choice clarification:**18AWG is a conservative recommendation using owned stock, not a unique requirement for this single-motor bench return. Genuine20AWGstranded copper is an acceptable alternative for a short isolated one-channel lead, with intact insulation, secure clamp fit and cool/unbundled bench routing. Aim10–30cm rather than a long loose extension; this is a chosen bench scope, not a universal current-rating cutoff. The proposed2Abranch fuse and actual wire/holder/connector matching still require completion/qualification before power; seller1.2Astall is not measured. No thin DuPont/breadboard path. Do not reuse this permission for a shared three-motor supply/return, full5Atrunk or basket/mains/final harness without reviewing combined current, route, temperature and protection. No automatic change to B04 final allowance or purchase. Source: [PowerStream wire resistance/current-sizing guide](https://www.powerstream.com/Wire_Size.htm), which treats ampacity tables as guidelines dependent on installation, insulation and heat. No universal ampacity assigned to the user's unidentified wire.
+
+**Step31 result, 5 November 2026:** user reports remaining holder tail secured in driverPOWER+. Accept wiring/retention by report; no photo/current-rating inspection supplied. Preserve that connection and the successful USB logic wiring.
+
+Motor current needs a proper return to the supply. Use the module's POWER− terminal on the three-way+, LOAD,− block; controlGND besidePWM is the signal return and is not a substitute for motor-power wiring. This step completes only the unpowered supply pair, not the motor or control circuit.
+
+1. Keep USB unplugged, adapter unplugged from wall AND DC connector, and fuse removed from holder. No motor/diode/control wires connect to this assembly yet.
+2. Take owned18AWG black stranded power wire, or the short20AWGstranded-copper alternative within the scope described above. Cut a length that comfortably reaches from connector− to driverPOWER− with slack; route away from other bare terminals, avoiding tension. Do not use a thin DuPont jumper or breadboard rail for this current path. If colour is not black, label both ends as this branch's negative power return.
+3. Strip only enough at each end for actual terminal depth (about4–5mm initially). Do not nick/remove strands. Twist strands together; if conductor cannot fit/clamp securely, stop and report. Do not force wire or solder-tin it as a screw-terminal workaround.
+4. Clamp one end in the DC connector terminal marked−. Clamp the other in the driver's POWER− on its three-way block. Use actual printed labels; do not use LOAD or the separate controlGND. One conductor per screw at this stage, clamped on copper, not insulation.
+5. Inspect for no loose strands/excess bare copper near+, LOAD or PCB metal. Gently tug each insulated end while supporting its connector to check retention; do not strip screws by overtightening.
+6. Leave fuse removed and all supplies disconnected. DriverLOAD/controlPWM/controlGND stay empty; no motor, diode or Mega wiring attaches to this power assembly.
+
+**Check before continuing:** ask whether connector−→driverPOWER− is secure at both ends, with fuse out/adapter disconnected. If a terminal label or fit is uncertain, request a close photo before further handling. This is not permission to fit the fuse or energize; actual connector/holder/wire/fuse matching, topology, motor-positive junction, flyback, safeOFF and secure unloaded mounting/disconnect remain pending.
+
+## Current Step 31 — remaining fuse-holder lead to driver positive
+
+**Step30 result, 5 November 2026:** user reports “done and secured” after loop preparation, first holder lead→DCconnector+ and retention instructions. Accept physical completion by report; no new photo or rated-current check supplied. Do not repeat the same connection. Keep the fuse OUT and adapter disconnected from connector/wall.
+
+1. Unplug MegaUSB and every supply. No motor or control wiring may attach to the loose driver. Keep LCD/input wiring intact but unpowered.
+2. Select one previously identified module. On its three-way POWER terminal block use the actual printed **+** label. In the saved underside photo20, the three terminals are+, LOAD,− from top to bottom in that view; rotation changes apparent position. Do not use the separate PWM/GND control terminals, and do not infer the terminal from screw colour alone. If+ cannot be identified, request a clear underside photo before wiring.
+3. Take the remaining free holder tail. Remove any temporary end insulation; strip only enough wire to fit the terminal clamp (approximately4–5mm initially, adjusted to actual clamp depth), with no nicked or loose strands. Twist strands gently together; insert into the wire-entry opening for+, not around the screw head. If it cannot fit or clamp securely, stop and report; don't force, remove conductor strands or add solder to fake a pin.
+4. Tighten without stripping the screw. Gently pull the insulated lead to check retention. The clamp must grip conductor, not insulation, with no exposed strands reaching LOAD/− or nearby PCB metal.
+5. Leave moduleLOAD/−/PWM/GND and connector− empty. No motor, diode, Mega or breadboard connection is made to this assembly yet. Fuse stays removed; adapter plug stays out. Support the module on a dry nonconductive surface; no power is applied.
+
+**Check before continuing:** ask whether remaining holder tail→driver+ is secure with fuse out and adapter disconnected; request photo if terminal identification/retention is uncertain. A secure joint is not complete channel acceptance or permission to insert fuse/power. Driver topology, adequate fused-positive motor junction (do not assume terminal accepts two wires), negative power return, protection/ratings, safeOFF and secured motor/disconnect remain later checkpoints.
+
+## Current Step 30 — first fuse-holder lead to connector positive, unpowered
+
+### Latest: user confirms the cable is still one loop
+
+The loop must become two separate tails to insert the holder in series with the positive supply. This is one cut through the red insulated cable, not a cut into the plastic holder. The earlier instruction below to stop and report loop status has now been satisfied. No cut is reported completed yet.
+
+1. Confirm USB and adapter unplugged, adapter plug OUT of connector, holder completely disconnected and fuse removed. Do not cut any cable attached to an energized supply or existing circuit.
+2. Find approximately halfway along the red wire between the two places where it enters the holder. This is normally the far side of the loop from the holder body. Keep the two resulting tails roughly equal for useful lead length; do not cut near the holder where a tail would become too short.
+3. Use wire cutters to make ONE cut at that midpoint, leaving two separate free tails. Keep fingers out of cutting jaws and wear eye protection. Do not cut any other cable or the holder body.
+4. Strip just one free tail to suit the connector clamp (about4–5mm initially, adjusted to actual terminal depth). Avoid nicking strands, twist them together and clamp that end in the DC connector terminal marked+. No exposed strands toward− and no clamp on insulation. Do not force an oversized conductor or tin it with solder as a screw-terminal workaround.
+5. Check gentle-pull retention. Leave the other tail insulated: its fresh cut end should not expose protruding strands; cap/tape it separately if necessary. Do not strip the second tail yet. Connector− remains empty and fuse stays OUT. Adapter, motor, module and Mega remain disconnected from this assembly.
+
+**Check before continuing:** request clear photo of the prepared holder/+connection and confirmation it stays attached under a gentle pull. No power/fuse replacement or more wiring until reviewed. The holder's actual lead gauge, ratings and whole-channel protection remain unresolved by making this connection.
+
+**Step29 result, 5 November 2026:** user reports all three connector mapping checks working as intended (+centre/−outer continuity, +to− isolated). Record qualitative PASS by report, not measured contact current capacity or a live adapter test.
+
+The branch fuse goes in series with positive supply: motor-branch current must pass through it before reaching the driver/motor circuit. Either lead of a normal passive fuse holder can face the supply; it has no polarity. This checkpoint only makes one unpowered connection, not a complete protected circuit.
+
+1. Unplug Mega USB and adapter from the wall. Keep adapter plug OUT of the DC connector. No motor, module or electronics attach to this loose assembly.
+2. Open the fuse-holder cap and REMOVE the fuse; leave it out.
+3. Check whether its red cable has two separate free ends. Photo02 appears to show an uncut loop: if still a continuous loop, stop and report that before cutting. No cutting is instructed by this step. If there are already two free ends, use either one below.
+4. Loosen the DC connector screw marked+. Strip only the insulation length needed to enter the terminal clamp (about4–5mm as an initial guide, adjusted to actual terminal). Do not nick/remove strands. Twist strands gently together; insert conductor fully into the wire-entry hole, not around the screw head. Ensure the clamp grips copper, not insulation, with no stray strand reaching−. Do not force oversized wire or tin strands with solder as a screw-termination workaround. Stop if wire cannot fit/clamp securely.
+5. Tighten securely without stripping the screw. Hold the connector and gently pull the insulated lead: it should stay retained. No torque/current rating is inferred. Individually insulate any bare free holder end with a suitable cap/electrical insulation tape; an open heat-shrink tube alone does not seal a tip. Keep connector− empty.
+6. Leave fuse out and all supplies disconnected. Do not attach the driver, motor or Mega yet.
+
+**Check before continuing:** ask for a clear photo of this+connection and gentle-pull result, OR confirmation the cable is still a loop. Wait before further wiring/fuse replacement. No energized test is issued; remaining wire/holder/connector/fuse matching, full topology, safeOFF/reset and secured motor/disconnect remain pending. Earlier connector-mapping prompts below are superseded by the reported pass.
+
+## Current Step 29 — check the disconnected DC connector's terminal mapping
+
+**Step28 result, 5 November 2026:** user confirms SR5100 and reports a forward result with redunbanded/blackbanded, none reversed. That is consistent with expected directional behavior if reverse displays OL/open; numeric0.000 is different and needs review. Exact displays/meter mode not supplied, so do not invent values or claim a rated-current test. Do not repeat the same test without a new reason. Band is cathode; opposite end is anode, not permanent positive/negative supply labels for every circuit.
+
+The barrel-to-screw connector converts the adapter plug into two wiring terminals. Its moulded plus/minus marks must be mapped to the actual centre/outer contacts before wiring a centre-positive supply; this check uses only the loose passive connector, not a powered adapter.
+
+1. Unplug USB and the adapter from the wall. Remove the adapter plug and every wire from the screw connector. Test only the completely disconnected connector. Never use continuity mode on an energized supply or outlet.
+2. Keep black meter lead inCOM and red inV/Ω, not a current jack. Select continuity/beeper mode. Briefly touch the probe tips together to establish beep/low resistance and separate them to establish open; if this does not work, clarify meter mode before continuing.
+3. Touch one probe to the metal of the screw terminal marked+, the other to the barrel's centre contact. Expected beep/low resistance near the shorted-probe baseline. Colours may be exchanged for these passive metal-contact checks.
+4. Test marked− terminal to the outer barrel contact. Expected beep/low resistance. Touch the contact itself, not black plastic, and do not bridge centre and outer with one tip.
+5. Test+ terminal against− terminal, with probes kept apart. Expected no beep/open; this checks for an unintended connection between the two isolated paths. A real short, unexpected mapping or unstable contact must be resolved before power.
+6. If the centre contact is inaccessible or unclear, do not force the probe or push anything inside. Send an end-on photo of the barrel opening so contacts can be identified. Leave the connector disconnected after the check.
+
+**Check before continuing:** ask for three results: +to centre, −to outer and+to−. Wait before wiring. This proves only low-current contact mapping/isolation; it cannot establish a connector's current capacity, correct plug dimensions under load or supply polarity/performance. No new powered adapter measurement or motor test is directed.
+
+## Current Step 28 — isolated flyback-diode check, 5 November 2026
+
+New [diode photo](assets/motor-review-2026-11-05/07-axial-diode.jpg) shows a black axial rectifier-style component with a pale band at the upper-right end in that orientation. This is the intended component style, unlike the red LED. Full body code is not reliably legible; ask the user to transcribe it while testing. Do not assert manufacturer/authenticity or current capacity from appearance. No electrical result yet.
+
+The band identifies the **cathode**; the opposite end is the **anode**. These names define a diode's direction. A digital multimeter's diode mode applies a small test current and displays forward voltage drop; this is different from a motor-power or current-capacity test.
+
+**Before testing:** leave the diode completely disconnected from motor, driver, breadboard and all supplies. Unplug Mega USB and adapter before handling nearby wiring. Never use diode/continuity/resistance mode on a powered circuit. Only probe the loose diode, not an adapter or household outlet.
+
+1. Put the black meter lead in COM and red in the V/Ω/diode jack, never the A/mA/10A current jack. If actual labels differ or the mode is unclear, send a meter photo before guessing.
+2. Select diode mode using its diode symbol. On a combined continuity/diode setting, use SELECT/FUNC as appropriate to show diode mode; do not rely on a continuity beep.
+3. Hold red on the unbanded lead (anode), black on the banded lead (cathode), touching separate metal leads with probe tips kept apart. Record the displayed number/unit. A conducting diode normally shows a forward-drop number; no exact pass window is imposed without the meter/part context. Schottky drops can be lower than ordinary silicon-diode examples.
+4. Swap probes: red on banded, black on unbanded. Record display. Normally this is OL/open at the meter's test conditions. OL is an open/over-range indication here, not measured zero volts.
+5. Transcribe the body code, expected selected stock SR5100, and report both readings. Do not wire or solder it into the motor channel yet.
+
+**Check before continuing:** wait for two readings and code. A near-zero result both ways suggests a short or touching probes; OL both ways may be an open device, poor probe contact or meter-setting issue. Diagnose actual readings before declaring failure. A forward-number/reverse-OL result is a basic low-current directional check only; it cannot establish rated power, authenticity, thermal margin or acceptance of the complete channel.
+
+Primary references: [Fluke diode test method](https://www.fluke.com/en-ph/learn/blog/digital-multimeters/how-to-test-diodes), [TRR SR520–SR5200 datasheet, band/cathode convention](https://www.trrsemicon.com/Content/upload/pdf/202337086/SR5100.pdf?rnd=235). The datasheet is a family reference, not proof TRR manufactured the photographed part.
+
+## Current Step 27 — lay out one motor channel, all power off, 5 November 2026
+
+### Latest photo result and immediate checkpoint
+
+Six originals plus observations are archived in [motor-review-2026-11-05](assets/motor-review-2026-11-05/manifest.json). Adapter label is now readable: MODEL1250, INPUT AC100–240V50/60Hz, OUTPUT12VDC5A, centre-positive. Label-implied power is60W. Accept these printed specifications and reported store voltage check without repeating earlier label/voltage questions. No actual loaded regulation, safety certification, barrel contact mapping or connector ampacity is proved by this photo. Motor reads JGB37-52012V22RPM. Fuse marking appears2, matching the planned2A selection; DC voltage/curve remain unknown. Module/connector match the previously reviewed forms.
+
+**The red two-lead component in photo05 is an indicator LED (light-emitting diode), not the motor flyback rectifier.** Do not connect it across the motor. A flyback rectifier carries the motor's turn-off current to limit the resulting voltage spike; an indicator LED is not a substitute.
+
+Next physical checkpoint, power off: locate the previously owned strip of black cylindrical axial diodes, illustrated in [the October photo](assets/inventory-2026-10-28/03-diodes.png). Choose one, keep it disconnected, and show its printed code and pale band. Expected selected code is SR5100; do not assign a rating/identity from shape alone. The pale band is the cathode-end identifier for this rectifier style; no installation orientation is issued yet. Wait for this identification before wiring. No new diode purchase, soldering, motor power or flash. Earlier missing-label requests below are superseded.
+
+User reports the adapter was checked at the physical store and requests proceeding. Retain that report without repeating the same voltage test. Actual output current, connector polarity and scope of store testing are not supplied. Preparation can proceed while gathering those specifications; no powered wiring is issued.
+
+1. Unplug Mega USB and the adapter from the wall. Keep the adapter output disconnected from all electronics and preserve the successful input/LCD wires.
+2. Set out one existing JGB37-520 motor, one existing MOSFET module, one inline fuse holder with its intended fuse, one axial diode and the existing DC barrel/screw connector. Keep them electrically disconnected on a dry nonconductive surface. These form one motor channel: driver switches motor current, fuse protects a suitably matched branch, diode provides the designed path for motor turn-off energy, and connector brings in the low-voltage supply. Their suitability is not established solely by possession.
+3. Request a clear photo of the laid-out parts, with close views or transcribed text for the actual fuse current/voltage markings and diode body code/band. Do not infer the delivered fuse is 2 A or diode is SR5100 from an order listing. No duplicate purchase or loose-driver resistance test is needed.
+4. Ask the user to type the adapter's OUTPUT line (especially current in A) and state its printed connector polarity if readable. A photo is an alternative, not a repeated compulsory request. Explain that actual current and which output contact is positive are needed for the wiring/protection design; being store-checked does not tell this chat those facts. If the polarity symbol is unclear, request a close photo instead of guessing. No new energized measurement yet.
+
+**Check before continuing:** wait for the parts/marking report. Do not connect motor, module or supply, assign output GPIO or upload firmware at this checkpoint. Next resolve the actual channel topology and matching fuse/diode/wire/connector ratings, secure the unloaded motor with shaft clearance and arrange independent accessible disconnection before safe-OFF/reset and powered tests. Breadboard/DuPont wiring is only for signals, never motor supply/return current. Earlier full-label/previous-probe questions below are superseded by this focused information request.
+
+## Current Step 26 — adapter review after reconnection, 5 November 2026
+
+**Reconnection result:** user reports all connected and working after Step 26D; accepts the restored USB logic/input circuit. LCD, buttons and index checks are user-reported, with no new serial capture/exact display trace or joint inspection. Earlier prompts below to reconnect, prove firmware retention or photograph the first solder joint are superseded. Preserve the current successful wiring and simulation; do not repeat the full historical tests without a new fault/change.
+
+Next review is information-only, before motor power wiring:
+
+1. Keep the adapter disconnected from the Mega, driver modules and motors. Unplug it from the wall before handling it for photographs. Do not open its enclosure or touch mains wiring.
+2. Request a clear photo of its entire printed label, including model, INPUT, OUTPUT, current in A, any power in W and connector-polarity symbol. The earlier proposed 12 V / 5 A / 60 W is not the established rating of the delivered adapter.
+3. Request a close photo of the output plug (tip/side) and any included detachable connector. A photograph alone cannot establish exact barrel dimensions or current suitability.
+4. Credit the earlier user-reported 12 V DC reading. Ask whether the measurement was with nothing attached (unloaded), and whether the user remembers where the red/black probes touched and the reading's sign. Do not ask for another energized measurement yet; an unknown answer is acceptable and determines a later targeted check.
+
+**Check before continuing:** wait for the photos/measurement explanation, then assess the actual adapter. No driver/motor connection, mains opening, output GPIO assignment or device command is issued. A 12 V reading does not verify current capacity, loaded regulation or connector polarity. Actual driver topology, motor wiring/connector/fuse/diode suitability, secured unloaded mount, accessible independent disconnect and safe OFF/reset handling remain later checkpoints before a protected single-channel test.
+
+## Current Step 26D — reconnect three index switches, 5 November 2026
+
+User reports buttons connected and requests proceeding. Accept that wiring report without repeating the first solder-joint checkpoint; no new solder/retention inspection or restored button function pass is inferred. Preserve LCD GND/5V/SDA20/SCL21, buttons D22/D23/D24 and existing shared GND. Mega retains simulation code by user report.
+
+An index switch will eventually mark a dispenser's position. For now it is only a hand-operated simulation input. Each roller microswitch has COM (common contact), NO (normally open: closes to COM when pressed) and NC (normally closed: opens when pressed). Use the actual markings/previously identified contacts; physical terminal order is not universal.
+
+1. Unplug Mega USB and all supplies before wiring. Leave the adapter, drivers, motors and fryer disconnected.
+2. Identify switches 1/2/3 to match buttons 1/2/3. Connect each COM to the existing shared signal GND; leave any already-correct ground return in place.
+3. Connect switch1 NO to Mega D26, switch2 NO to D28 and switch3 NO to D30. Follow printed numbers on the double-row header, one jumper per socket. Do not connect 5V to switch contacts.
+4. Leave all NC contacts unused. Keep unused lugs and exposed joint metal from touching other conductors/case. Use secure individually insulated leads; if a connector will not stay attached or a label is unreadable, stop and report that rather than guessing.
+5. Trace all six connections against [WIRING.md, Step 26D](WIRING.md#current-step-26d--three-index-switches-5-november-2026). Leave USB unplugged. No shared ground rebuilding or motor connections are needed.
+
+**Check before continuing:** ask whether COM→shared GND and NO→26/28/30 are connected for all three, NC unused, with USB still unplugged. If they were already connected, accept an explicit mapping confirmation. Then issue a focused restored-circuit power/function check using the existing simulation; no automatic flash or repeat of the full historical fault-test suite.
+
+## Current Step 26C — reconnect three flavor buttons, 5 November 2026
+
+### Current sub-check: secure wire attachment before proceeding
+
+**Latest clarification:** user has stranded 20 AWG wire and heat-shrink tubing, plus previously reported soldering gear. Earlier availability questions below are resolved. No soldering is yet reported complete. The first checkpoint is one joint, before assembling a whole button.
+
+#### First physical checkpoint — one wire on one button contact
+
+This joint replaces the slipping connector at the button. Later, the far end will receive a jumper-wire tail with a proper male pin; do not put bare 20 AWG into Mega/breadboard sockets or solder to Mega headers.
+
+**Safety before starting:** unplug Mega USB and every supply. Disconnect both terminals of one red flavor1 button from all electronics so it is completely separate. Leave the LCD wires in place but unpowered. Work on a heat-resistant surface with a stable iron stand, eye protection and ventilation/fume extraction; keep your face out of the fumes. Secure the button in a suitable holder without crushing it, rather than holding the hot joint with fingers. Keep the hot tip/barrel off skin, insulation and button plastic. Use electronics-grade rosin/no-clean solder/flux, never plumbing acid flux. Wash hands after solder handling, especially with lead-containing solder.
+
+1. Identify the two previously tested contact lugs. Either may receive this first lead: isolated contacts have no polarity. The old photo appears to show solder-style eyelet lugs, but gives no dimensions or heat limits. If the actual terminal is different or unclear, stop and send a close photo before heating it.
+2. Cut one wire long enough to reach the intended controller area with a little slack. Leave the far end insulated and disconnected. Strip approximately 4 mm at the button end only, without nicking strands; gently twist the strands together. Adjust stripped length to suit the actual lug rather than leaving excess bare copper.
+3. Slide an individual heat-shrink sleeve onto the wire before soldering and park it away from the hot end. It must pass over the finished lug/joint and later shrink snugly over the insulated wire; no exact tubing size is established. It must cover exposed metal and overlap insulation without blocking the button mechanism.
+4. If the lug has a hole, pass the conductor through and form a gentle retaining hook. Keep every strand together and away from the other contact/case. Do not bend the lug, force an oversized bundle or cut strands off to make it fit. Report a fit problem before continuing.
+5. Clean the iron tip and give it a thin coating of solder to aid heat transfer. Touch the tip to both wire and metal lug; feed a small amount of solder onto the heated joint so it flows onto both surfaces. Do not simply drop solder onto cold metal or make a large blob. No manufacturer heat limit is known for this generic button: if solder does not flow within a few seconds, remove the iron, let everything cool and investigate cleanliness/flux/iron condition rather than continuing to heat the switch. Stop for softened plastic, a moving lug or changed button action.
+6. Remove solder wire, then the iron, and hold the joint still until solder sets. Let it cool naturally before handling. Inspect for solder bonded to wire and lug, no stray strands/bridges and no damaged plastic/insulation. Shine alone is not a quality test; lead-free solder can be matte.
+7. Once cool, gently pull the insulated wire and press/release the disconnected button. The wire must stay attached without lug movement and the button must return normally. Leave heat-shrink back for a photo before covering the joint. Do not connect either end to electronics or power.
+
+**Check before continuing:** request a close photo of this cooled joint and the gentle-pull/button-return result. Stop before the second lead, splices, heat shrinking or other buttons. Inspection cannot prove electrical contact action: after both leads are finished, the isolated button still needs a released-open / pressed-closed / released-open continuity test before electronics connection. No continuity mode on powered circuits.
+
+User reports jumper connectors slipping off the button and asks about 20 AWG wire. A 20 AWG lead is electrically suitable for these very low-current contacts; larger wire does not fix an unsuitable connector. Stranded wire (many fine strands) is more flexible than solid wire (one conductor) for handled buttons. Before issuing cutting/soldering steps, ask which type they have and whether heat-shrink tubing and soldering equipment are available. Existing soldering-equipment ownership is recorded, but insulation availability is not.
+
+Proposed approach, not yet selected or assembled: make a short wire lead (a pigtail) soldered to each suitable button contact, insulate each separately with heat-shrink, and splice its other end to a short jumper-wire tail retaining its factory male pin. This keeps a proper removable pin at the Mega/breadboard end. Support the insulated wire with slack so button movement cannot pull on the solder joint (strain relief). Do not solder wires directly to the Mega or force bare 20 AWG/strands or oversized solder-tinned ends into its sockets. Correctly sized removable crimp terminals are another option only after actual lug size and compatible wire/crimp tooling are established; do not guess a connector size from the old photo.
+
+Future soldering checkpoint must start with USB/all supplies unplugged and button leads disconnected from electronics. Cover hot-iron burns, a stable iron stand, eye protection, ventilation/fume avoidance, hand washing after solder handling, and avoiding prolonged heat that can damage switch plastic. Stop after one insulated button assembly for inspection, gentle retention and isolated continuity checks before assembling the other two. No soldering/cutting or changed physical wiring is reported yet.
+
+References: [Adafruit wire guidance](https://learn.adafruit.com/wires-and-connections/cables), [Adafruit breadboard jumper guidance](https://learn.adafruit.com/breadboards-for-beginners/diy-jumper-wires), [Adafruit insulated wire splices](https://learn.adafruit.com/lets-put-leds-in-things/soldering). These explain wire handling, not a verified thermal/terminal rating for the user's generic button.
+
+User says the shared connections already exist. Keep the existing common signal ground; do not rebuild it or add a second rail. This report does not independently verify every return wire. LCD works and Mega sketch is unchanged by user report.
+
+Each previously tested red button has two contact terminals. It is normally open (disconnected when released) and momentary (connected only while pressed). Either terminal can be the input; these contacts have no polarity. The existing simulation uses internal pull-up resistors: they hold each released input HIGH, and pressing connects it to GND, making it LOW. No external resistor or 5V contact wire is needed.
+
+1. Unplug USB and every external supply before handling wires. Keep LCD connections intact and the adapter/motors/drivers disconnected.
+2. Choose button identifiers 1, 2 and 3 consistently; label them if necessary.
+3. Connect one contact of button1 to Mega D22, button2 to D23 and button3 to D24. Retain an already-correct signal wire rather than duplicating it.
+4. Each button's other contact must connect to existing shared signal GND. Leave an existing correct return in place; add only a missing return. Do not attach either contact directly to 5V/VIN.
+5. Trace endpoints using printed header numbers. The Mega's double-row connector can cause one-socket errors; do not assume 22/23/24 are all in one straight row. Use one jumper per socket and secure contact connections without adjacent bare metal touching. If a connection cannot be retained securely, stop and report it.
+6. Leave USB unplugged and do not add index signal wires yet.
+
+Table/diagram: [WIRING.md, Step 26C](WIRING.md#current-step-26c--flavor-buttons-5-november-2026).
+
+**Check before continuing:** ask whether all three button connections match 22/23/24 with the other contacts on shared GND and USB still unplugged. Wiring completion is not a functional input pass. Index wiring and a focused restored-circuit check follow after the report.
+
+## Current Step 26B — restore shared signal ground, 5 November 2026
+
+**Step 26A result:** user reports LCD working after reconnection and confirms no different sketch was uploaded; only the breadboard was reused. Retained simulation firmware and LCD operation are user reports, not new tool captures. Keep the LCD's four connections and contrast setting intact.
+
+Ground (GND) is the common electrical reference/return. The six input switches will each connect their input to this shared ground when pressed. A breadboard rail is a line of holes intended to share an internal metal contact; the blue/minus marking is only a guide and does not create a connection. Opposite rails and sections separated by a break may be isolated.
+
+1. Unplug Mega USB and all supplies before moving wires. Leave the 12 V adapter, motors and drivers disconnected. Keep the LCD leads in place.
+2. Identify one blue/minus-marked rail section with at least seven available holes for the ground feed and six future contact returns. Keep all seven within that one section; do not assume the rail continues through a central gap or connects to the opposite side. If its layout is unclear, ask for a photo review rather than guessing.
+3. Fit one black male-to-male jumper between a **spare Mega GND socket** and a hole in that chosen rail section. Use one wire per Mega socket; do not stack it into the LCD's occupied GND socket. Follow printed GND labels, never adjacent 5V/VIN/RESET.
+4. Leave the other parts disconnected and USB unplugged. No breadboard 5V supply is needed for these switch contacts, and motor return current must never use this rail.
+
+See [WIRING.md, Step 26B](WIRING.md#current-step-26b--shared-signal-ground-5-november-2026) for the table and diagram.
+
+**Check before continuing:** ask the user to confirm the GND jumper is connected, identify the chosen rail section, and confirm USB remains unplugged. Request a clear photo if the rail section or GND socket is uncertain. This connection report is not a measured continuity pass. Button reconnection follows after this checkpoint; restored input tests will check the paths functionally.
+
+## Completed Step 26A — reconnect the LCD with all power off, 5 November 2026
+
+**Result:** user reports LCD working and Mega code unchanged. The procedure and original pending prompt below are retained as history; proceed using Step 26B above.
+
+The user removed the breadboard wiring for another project. Historical passes below do not establish today's connections. Whether the Mega received another sketch is unknown; ask before powering it. Restore one small section at a time and wait for the user's result.
+
+**Before wiring:** unplug Mega USB and every external supply. Keep the 12 V adapter, motors, drivers and fryer disconnected. Work on a clean, dry, nonconductive surface. Never connect 12 V to the LCD or Mega 5V pin.
+
+The LCD is the two-line display. Its attached rear I2C backpack reduces its communication wiring to two signals: SDA carries data and SCL carries the communication clock. VCC supplies power; GND is the electrical return/reference. Use the printed labels, not an assumed left-to-right order.
+
+1. Take four male-to-female jumper wires: female sockets fit the LCD pins, male pins fit Mega sockets. If the ends do not fit securely, stop and report that.
+2. Connect LCD GND to a Mega GND socket (black suggested).
+3. Connect LCD VCC to the Mega POWER-header 5V socket (red suggested). Do not use VIN, RESET or 3.3V.
+4. Connect LCD SDA to Mega digital 20 (blue suggested).
+5. Connect LCD SCL to Mega digital 21 (yellow suggested).
+6. Trace each wire end-to-end; check that connectors are not offset by one pin and bare pins do not touch. Leave the contrast trimmer unchanged. Leave USB unplugged.
+
+Pin table and diagram: [WIRING.md, Step 26A](WIRING.md#completed-step-26a--lcd-reconnection-map-5-november-2026). These four wires connect directly; a breadboard is unnecessary for this checkpoint.
+
+**Check before continuing:** ask the user to confirm the four connections are complete with USB still unplugged, and whether they uploaded different code to this Mega while using it for the other project. If unsure of endpoints, request a clear photo before power. No reconnection or powered result is recorded yet. Shared signal ground, buttons and index switches follow after this result; adapter review follows logic restoration. A fresh upload requires the project's normal explicit approval.
+
 > **Current state, 5 November 2026:** Step24 USB-only logic checks passed; Step25 procurement review saved. Step26 is pending adapter label/polarity review. Adapter is now owned and user reports measured12V; current/power rating, polarity and loaded suitability are not yet established. October missing-adapter/pending-test statements below are historical. Driver GPIO and motor-power wiring remain unassigned. See [current handoff](handoffs/2026-11-05-assembly-resume.md) and [USB checkpoint](USB_LOGIC_CHECKPOINT.md).
 
 

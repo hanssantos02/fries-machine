@@ -1,6 +1,8 @@
 # PROJECT.md: Automatic Fries Machine
 
-Updated: 5 November 2026, Asia/Manila. Current phase: **Phase 2, Step 26 pending — adapter received/reported 12 V; label/polarity review before powered assembly**. The user explicitly asked to start prototyping with received materials. Outstanding selections remain conditional; this does not authorise Phase 3 or unverified powered tests.
+> **Current save, 6 November 2026:** [Concise assembly checkpoint](docs/ASSEMBLY_CHECKPOINT.md) and the newest dated reports supersede earlier pending prompts below. **Step37 motor soldering has been issued but is not reported complete.** Firmware remains output-free simulation; no powered motor test or Phase3.
+
+Updated: 6 November 2026, Asia/Manila. Current phase: **Phase2, Step37 — motor positive/cathode first solder joint**. User confirms Step35expected beep/beep/no-beep and Step36DRIVER+secured. Keep taped positive junction/18AWGreturn. With all power unplugged/fuseout, label motorAbenchpositive, BfutureLOAD; attachMOTOR+and bandedSR5100lead toAonly. Unbanded lead/B/LOAD/control stay disconnected pending cooled-joint photo/retention review. No motor direction/rated-load test, GPIO/firmware/flash or Phase3. Complete topology/ratings, flyback, safeOFF, mounting/disconnect remain pending.
 
 ## Basics
 - **Project name:** Automatic Fries Machine.
@@ -39,6 +41,10 @@ Updated: 5 November 2026, Asia/Manila. Current phase: **Phase 2, Step 26 pending
 User chooses one HSK LA38 Emergency Stop (1NO+1NC, screenshotPHP98), not yet received; final safety acceptance remains pending documented opening mechanism/contact duty. Do not buy old STOP supplier additionally. Buzzer/LED kit A10 will be bought at a physical store; itemized list saved in `docs/PHYSICAL_STORE_LIST.md`, existing parts reused. No powered test or phase transition.
 
 ## Current assembly resume — 5 November 2026
+
+**Latest Step 27, unpowered preparation:** user says adapter was checked at the physical store and asks to proceed. Store check accepted as reported, without assigning an unstated test scope or 5 A/centre-positive rating. Proceed with one-channel parts layout/marking review; adapter printed OUTPUT current/polarity may be supplied as text instead of another requested label photo. No repeat voltage measurement or powered motor connection. Protection, power-wire/connector ratings, actual driver topology, secured unloaded mounting and safe-OFF/reset remain required before powered testing.
+
+**Current Step 26C detail:** user confirms stranded 20 AWG wire and heat-shrink tubing for loose button connections. First checkpoint is one soldered lead on one fully disconnected button contact, inspected after cooling before covering or connecting electronics. No change to final power-wire sizing, pin assignments, firmware or budget. LCD working, Mega code unchanged and existing shared GND are user-reported.
 
 **5 November 2026 update:** user now owns one 12 V adapter and reports measuring **12 V DC**. Exact model, label current/power rating, enclosure type, connector size/polarity, load during measurement and loaded regulation/protection are not supplied. Planned A17 is enclosed regulated 12 V / 5 A / 60 W, but those ratings are not established by the voltage reading. Do not rebuy it automatically. No motor connection/test is reported.
 
