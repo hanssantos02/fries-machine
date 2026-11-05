@@ -1,0 +1,35 @@
+{
+  "sections": [
+    {
+      "key": "a",
+      "section": 14,
+      "head": 15,
+      "first": 16,
+      "last": 34,
+      "total": 35
+    },
+    {
+      "key": "b",
+      "section": 38,
+      "head": 39,
+      "first": 40,
+      "last": 57,
+      "total": 58
+    },
+    {
+      "key": "c",
+      "section": 61,
+      "head": 62,
+      "first": 63,
+      "last": 65,
+      "total": 66
+    }
+  ],
+  "rows": 114,
+  "expected": {
+    "a": 7779,
+    "b": 8338.4,
+    "c": 0
+  },
+  "unpriced": 8
+}

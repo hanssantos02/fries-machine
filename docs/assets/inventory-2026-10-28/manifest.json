@@ -1,0 +1,132 @@
+{
+  "recorded_date": "2026-10-28",
+  "photos": [
+    {
+      "file": "01-pushbuttons.png",
+      "original_path": "/tmp/codex-clipboard-70948b19-3221-4498-8ccf-ee4d76b05928.png",
+      "observation": "Three red panel pushbuttons visible; contact action untested.",
+      "sha256": "1ef10165236d3e105f441d91e186ef6bf11b46f2485938d31f565dcc768e10ea"
+    },
+    {
+      "file": "02-dc-connector.png",
+      "original_path": "/tmp/codex-clipboard-4a04de93-0752-4ab0-aea8-dcd6e253bebd.png",
+      "observation": "One DC connector; size, polarity mapping and current suitability unverified.",
+      "sha256": "6bce33ae61f4b4a1dc37349dc8dde1ef82968e2b4ecb727655c056976a8ebd2c"
+    },
+    {
+      "file": "03-diodes.png",
+      "original_path": "/tmp/codex-clipboard-790d87da-063d-4633-8731-a2f6e156e724.png",
+      "observation": "One strip/bag of axial diodes; markings appear consistent with SR5100; count unconfirmed.",
+      "sha256": "48e0e0b814a9a3cb3d683db391a279a194530fa5b0918e92fa3e0cb263bf51de"
+    },
+    {
+      "file": "04-microswitches.png",
+      "original_path": "/tmp/codex-clipboard-6806e499-a345-45e2-82c9-a75885ab5d8e.png",
+      "observation": "One bag of lever/roller microswitches; count and terminal labels unconfirmed.",
+      "sha256": "f7e74c7d6b927d7570e3e470df38476ef80d6abbb00031bef47fa90c4e46e316"
+    },
+    {
+      "file": "05-lcd-front.png",
+      "original_path": "/tmp/codex-clipboard-ec1db849-4f00-454f-842c-bd6624a4326b.png",
+      "observation": "One 1602-style display front; rear backpack not shown.",
+      "sha256": "d630afb5293e38d87667025d31acb8cb126114a131a2e953671544a97f458ae3"
+    },
+    {
+      "file": "06-mega2560.png",
+      "original_path": "/tmp/codex-clipboard-69e8389c-633f-47af-9f2a-b26f26715274.png",
+      "observation": "One full-size Mega 2560 compatible board; untested.",
+      "sha256": "597dfb7ab791fd55261cc6513878d451094d3d2e7e85588253f451166e810ba2"
+    },
+    {
+      "file": "07-black-cable.png",
+      "original_path": "/tmp/codex-clipboard-1b0849a0-3f24-4bb3-a4b0-a50cca7c7b14.png",
+      "observation": "One black cable; connector ends and function unconfirmed.",
+      "sha256": "9ae0184af06ccbcb711de47725ab9bf73857a7b8243e0eb15abdf4146b08656f"
+    },
+    {
+      "file": "08-flavor-motors.png",
+      "original_path": "/tmp/codex-clipboard-f3060cb1-7281-4b04-9585-e20fdd733370.png",
+      "observation": "Three JGB37-520 motors; visible labels DC12V22RPM; each label to inspect.",
+      "sha256": "9c3bf6202dfb010f4503ee9d951eb16b64a9a70c1654605993d61a7685f90603"
+    },
+    {
+      "file": "09-fuse-holders.png",
+      "original_path": "/tmp/codex-clipboard-7f12e4f2-cb46-4f7a-9884-9a07e50682c8.png",
+      "observation": "At least three inline holders appear visible; total and ratings unconfirmed.",
+      "sha256": "b64a805cc6f3adfe1b5fbc752de1273f5cd7899311e503cb6260d8cdf4d81f32"
+    },
+    {
+      "file": "10-blade-fuses.png",
+      "original_path": "/tmp/codex-clipboard-1d6e6a41-9d55-40df-a386-c88da295aad0.png",
+      "observation": "One bag of blade fuses; count and ratings unreadable.",
+      "sha256": "e636c746fffbb779ff750a79ec454b765d84356fd5a4028644e6ecb38b6d5bd2"
+    },
+    {
+      "file": "11-capacitors-1000uf.png",
+      "original_path": "/tmp/codex-clipboard-43092c3d-a1f6-46bc-97f4-63dd8a9d5003.png",
+      "observation": "One bag; visible sleeves 1000uF25V; count unconfirmed.",
+      "sha256": "88dd0e581ddab32a4a4766f47bec548f86c77eeaf9d95f02b20d01650d5d95e4"
+    },
+    {
+      "file": "12-capacitors-470uf.png",
+      "original_path": "/tmp/codex-clipboard-02c374cb-1f8d-42f0-bb61-7afe3675095e.png",
+      "observation": "One bag; visible sleeves 470uF16V; count unconfirmed.",
+      "sha256": "ba55068d9c787fc480d554b9aa2695fb6acfa8032c0c22083ae8c29a094920a8"
+    },
+    {
+      "file": "13-lcd-backpack.png",
+      "original_path": "/tmp/codex-clipboard-d31f0ffd-bfe3-4fe8-a0c3-fbf36bbee742.png",
+      "observation": "Rear photo shows HW-61 marking, attached I2C-style backpack and four male header pins labelled top-to-bottom GND, VCC, SDA, SCL in supplied view; blue trimmer visible. IC text not reliably readable; no address, voltage rating or operation measured.",
+      "sha256": "7a917e566ee78aa1a92dc8d8329c023706c7d343831bfabf2cadf31ede13b983"
+    },
+    {
+      "file": "14-lcd-lit-no-text.png",
+      "original_path": "/tmp/codex-clipboard-5bb9d945-5f01-4290-b9d4-6e53b9974938.png",
+      "observation": "LCD front backlight blue; no readable characters in photo.",
+      "sha256": "ee6a548dbd046258ca53355feca305f52635878b665a4c0d584c6e1a05f86b75"
+    },
+    {
+      "file": "15-lcd-mega-signal-wires.png",
+      "original_path": "/tmp/codex-clipboard-83c1d124-0f57-4a94-89d3-dd2cf45e74b9.png",
+      "observation": "Mega communication header and two attached signal wires shown; labels20/SDA and21/SCL visible. End-to-end LCD mapping not fully visible in this image.",
+      "sha256": "0c00309ae7749c831f845484c68a516b54b8410a5d14346b4c461c48fa96e03f"
+    },
+    {
+      "file": "16-lcd-mega-power-wires.png",
+      "original_path": "/tmp/codex-clipboard-5d51d4f4-01f4-4d0e-ab12-e66adb3f39a9.png",
+      "observation": "Mega USB connected and ON lit; power-header wire ends pictured. Not an independent voltage measurement.",
+      "sha256": "ed79967327da01e835512716b78ca143f535abf1594fce4d2f150acf547778a0"
+    },
+    {
+      "file": "17-lcd-readable-after-contrast.png",
+      "original_path": "/tmp/codex-clipboard-446a2a93-f98f-406d-9fbe-5ceef38a95ce.png",
+      "observation": "Photo after requested contrast adjustment shows readable FRIES MACHINE and Seconds:23. User confirms now working as intended; one still photo alone does not measure counter movement.",
+      "sha256": "e262b7912e43433ef9e1f280a0aa3f2a733bb9564a0d178294618436f956947f"
+    },
+    {
+      "file": "18-button-header-pin-concern.png",
+      "original_path": "/tmp/codex-clipboard-6ab892ca-c4b7-4d9f-97df-17d05401b7d3.png",
+      "observation": "Pre-correction close view of Mega double-row header; some wire endpoints obscured. User later reports self-corrected pins and all buttons working. Exact faulty sockets not established.",
+      "sha256": "dbacb8b4da63852b6cdb816a6ef45991d4ce9a6a400002732a3ec4c978169cf5"
+    },
+    {
+      "file": "19-mosfet-component-side.png",
+      "original_path": "/tmp/codex-clipboard-9ec0b8df-37ab-464c-97ad-41437c9de47a.png",
+      "observation": "One soldered module pictured; green two-way terminal PWM above GND. Power MOSFET and four-lead device visible, exact chip markings unreadable. No electrical test inferred.",
+      "sha256": "0336c0dffd4476e8dd7db2f3fdf120291a25a4407a820da1e8fae4627347012f"
+    },
+    {
+      "file": "20-mosfet-solder-side.png",
+      "original_path": "/tmp/codex-clipboard-9463c440-8b2e-4935-a157-ca7a9bfb8617.png",
+      "observation": "Rear labels readable: PWM above GND on left; +, LOAD, minus top-to-bottom on right. Adjacent terminal joints appear separated in this photo; electrical continuity and joint quality not certified.",
+      "sha256": "a61640d4ad4a1b10872d584a166f7ae99724e4bf9bcb06135027827e2873f236"
+    },
+    {
+      "file": "21-existing-common-ground.png",
+      "original_path": "/tmp/codex-clipboard-8924669b-78bf-4f23-be5d-32ae37d3a814.png",
+      "observation": "User states existing common GND line already made on breadboard for everything. Photo shows several jumper connectors along the blue-marked rail and Mega ON LED lit. Complete endpoints, split-rail continuity and all destinations not independently established; wire colours do not establish signal identity.",
+      "sha256": "a8249a247c4dce01c7e814c64c6e99ee7191d4656023be1e80255301d72c0c8e"
+    }
+  ],
+  "separate_user_confirmation": "MOSFET modules present and all soldered; exact count and labels not explicitly confirmed."
+}

@@ -1,0 +1,16 @@
+{
+  "firmware/cycle_logic_test/ButtonInput.h": "b23de447eef4edd1fed8723c6b34d22318483f470365ccc174a5cf8bf9ba5269",
+  "firmware/cycle_logic_test/CycleLogic.h": "b7ad4368e7ac2b927401006a7a32b3a26eee104efa544c8beee2219bb027fdf8",
+  "firmware/cycle_logic_test/cycle_logic_test.ino": "e38865a4b4829ed9aee0ce58e8ea8d0a7cf7da67b345d5c9ab6bd1566d2394a4",
+  "firmware/flavor_buttons_test/ButtonInput.h": "b23de447eef4edd1fed8723c6b34d22318483f470365ccc174a5cf8bf9ba5269",
+  "firmware/flavor_buttons_test/flavor_buttons_test.ino": "53ba87fa0ebacef930a2f7523a125c58b24193386a77a86f1f3025999e9b1826",
+  "firmware/inputs_index_test/ButtonInput.h": "b23de447eef4edd1fed8723c6b34d22318483f470365ccc174a5cf8bf9ba5269",
+  "firmware/inputs_index_test/inputs_index_test.ino": "eef06dd1af2e726bfa2d547dd434c3614207a044969d00937ad067be2fc8c199",
+  "firmware/inputs_three_index_test/ButtonInput.h": "b23de447eef4edd1fed8723c6b34d22318483f470365ccc174a5cf8bf9ba5269",
+  "firmware/inputs_three_index_test/inputs_three_index_test.ino": "dc72485151ce5607338c0c658e8d92e280bf00a709b321c796b3f6d5defb00cc",
+  "firmware/lcd_i2c_scan/lcd_i2c_scan.ino": "1d46d1842e6b2201d20892cca18831352f78b06fc0aecc59aa264bf7a6e1bae8",
+  "firmware/lcd_text_test/lcd_text_test.ino": "b9bed049f2d1a4ed7ccaafbe8493fe1c90daad717795be3b602697325269057d",
+  "firmware/mega_diagnostic/mega_diagnostic.ino": "f078af460e9c013b2757a313a0aac927586a5601b61395aca41f469b0008e2e7",
+  "firmware/tests/button_input_test.cpp": "74e25f8daf2db591705309ce9a13a904ffdc532c970bc980a75fc1d3222d43a1",
+  "firmware/tests/cycle_logic_test.cpp": "f92c876e9335d05460e1523da1e053b2c34309daa18381d8b931915fb77a445f"
+}

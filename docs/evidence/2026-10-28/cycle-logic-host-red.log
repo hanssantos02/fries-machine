@@ -1,0 +1,4 @@
+firmware/tests/cycle_logic_test.cpp:6:10: fatal error: ../cycle_logic_test/CycleLogic.h: No such file or directory
+    6 | #include "../cycle_logic_test/CycleLogic.h"
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.

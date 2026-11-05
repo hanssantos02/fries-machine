@@ -1,0 +1,30 @@
+Monitor port settings:
+  baudrate=115200
+  bits=8
+  dtr=on
+  parity=none
+  rts=on
+  stop_bits=1
+
+Connecting to /dev/ttyUSB0. Press CTRL-C to exit.
+P)�JH�D���!)�Մ��l��ԁ̈́���̈́�S u!�INPUTS_3INDEX_V1 boot: buttons22,23,24 index26,28,30; LCD0x27 SDA20 SCL21
+INPUTS_3INDEX_V1 READY: 35ms debounce, hold counts once.
+Inputs1-3=buttons; input4=INDEX1/26,5=INDEX2/28,6=INDEX3/30.
+NO contact: released=1/READY; actuated=0/ACTIVE.
+Operate one contact at a time. ? reports actual inputs.
+INPUTS_3INDEX_V1 STATUS raw=111111 counts=0,0,0,0,0,0 lcd=OK
+INPUTS_3INDEX_V1 STATUS raw=111111 counts=0,0,0,0,0,0 lcd=OK
+INPUTS_3INDEX_V1 STATUS raw=111111 counts=0,0,0,0,0,0 lcd=OK
+INPUTS_3INDEX_V1 STATUS raw=111111 counts=0,0,0,0,0,0 lcd=OK
+INPUTS_3INDEX_V1 STATUS raw=111111 counts=0,0,0,0,0,0 lcd=OK
+INPUTS_3INDEX_V1 STATUS raw=111111 counts=0,0,0,0,0,0 lcd=OK
+INPUTS_3INDEX_V1 STATUS raw=111111 counts=0,0,0,0,0,0 lcd=OK
+INPUTS_3INDEX_V1 STATUS raw=111111 counts=0,0,0,0,0,0 lcd=OK
+INPUTS_3INDEX_V1 STATUS raw=111111 counts=0,0,0,0,0,0 lcd=OK
+INPUTS_3INDEX_V1 STATUS raw=111111 counts=0,0,0,0,0,0 lcd=OK
+INPUTS_3INDEX_V1 STATUS raw=111111 counts=0,0,0,0,0,0 lcd=OK
+INPUTS_3INDEX_V1 STATUS raw=111111 counts=0,0,0,0,0,0 lcd=OK
+INPUTS_3INDEX_V1 STATUS raw=111111 counts=0,0,0,0,0,0 lcd=OK
+INPUTS_3INDEX_V1 STATUS raw=111111 counts=0,0,0,0,0,0 lcd=OK
+INPUTS_3INDEX_V1 STATUS raw=111111 counts=0,0,0,0,0,0 lcd=OK
+^C

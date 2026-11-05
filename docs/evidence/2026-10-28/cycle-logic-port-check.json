@@ -1,0 +1,17 @@
+{
+  "detected_ports": [
+    {
+      "port": {
+        "address": "/dev/ttyUSB0",
+        "label": "/dev/ttyUSB0",
+        "protocol": "serial",
+        "protocol_label": "Serial Port (USB)",
+        "properties": {
+          "pid": "0x7523",
+          "serialNumber": "",
+          "vid": "0x1A86"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+metrics:
+  enabled: false
+updater:
+  enable_notification: false
+output:
+  no_color: true

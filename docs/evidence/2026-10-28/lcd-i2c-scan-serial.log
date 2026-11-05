@@ -1,0 +1,20 @@
+Monitor port settings:
+  baudrate=115200
+  bits=8
+  dtr=on
+  parity=none
+  rts=on
+  stop_bits=1
+
+Connecting to /dev/ttyUSB0. Press CTRL-C to exit.
+�	f����T�J�����LCD_I2C_SCAN_V1 boot: Mega2560, USB-only LCD test
+LCD_I2C_SCAN_V1 scan start: SDA20 SCL21, 100kHz
+FOUND 0x27
+SCAN_COMPLETE devices=1
+Send r to repeat. Address ACK alone does not test LCD text.
+r
+LCD_I2C_SCAN_V1 scan start: SDA20 SCL21, 100kHz
+FOUND 0x27
+SCAN_COMPLETE devices=1
+Send r to repeat. Address ACK alone does not test LCD text.
+^C

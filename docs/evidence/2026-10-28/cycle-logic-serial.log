@@ -1,0 +1,32 @@
+Monitor port settings:
+  baudrate=115200
+  bits=8
+  dtr=on
+  parity=none
+  rts=on
+  stop_bits=1
+
+Connecting to /dev/ttyUSB0. Press CTRL-C to exit.
+CYCLE_SIM_V1 boot: SIMULATION ONLY, NO ACTUATOR OUTPUTS
+CYCLE_SCYCLE_SIM_V1 boot: SIMULATION ONLY, NO ACTUATOR OUTPUTS
+CYCLE_SIM_V1 STATUS phase=IDLE flavor=0 seconds=0 raw=111111 lcd=OK
+CYCLE_SIM_V1 READY: index15s, SIM warmup5s/cook10s; basket untested.
+Physical flavor button starts; hand-operate matching index. Busy presses ignored.
+? prints status; r resets/abandons this software simulation only.
+CYCLE_SIM_V1 STATUS phase=IDLE flavor=0 seconds=0 raw=111111 lcd=OK
+CYCLE_SIM_V1 STATUS phase=IDLE flavor=0 seconds=0 raw=111111 lcd=OK
+CYCLE_SIM_V1 STATUS phase=IDLE flavor=0 seconds=0 raw=111111 lcd=OK
+CYCLE_SIM_V1 STATUS phase=IDLE flavor=0 seconds=0 raw=111111 lcd=OK
+CYCLE_SIM_V1 STATUS phase=IDLE flavor=0 seconds=0 raw=111111 lcd=OK
+CYCLE_SIM_V1 STATUS phase=IDLE flavor=0 seconds=0 raw=111111 lcd=OK
+CYCLE_SIM_V1 STATUS phase=IDLE flavor=0 seconds=0 raw=111111 lcd=OK
+CYCLE_SIM_V1 STATUS phase=IDLE flavor=0 seconds=0 raw=111111 lcd=OK
+CYCLE_SIM_V1 STATUS phase=IDLE flavor=0 seconds=0 raw=111111 lcd=OK
+CYCLE_SIM_V1 STATUS phase=IDLE flavor=0 seconds=0 raw=111111 lcd=OK
+CYCLE_SIM_V1 STATUS phase=IDLE flavor=0 seconds=0 raw=111111 lcd=OK
+CYCLE_SIM_V1 STATUS phase=IDLE flavor=0 seconds=0 raw=111111 lcd=OK
+CYCLE_SIM_V1 STATUS phase=IDLE flavor=0 seconds=0 raw=111111 lcd=OK
+CYCLE_SIM_V1 STATUS phase=IDLE flavor=0 seconds=0 raw=111111 lcd=OK
+CYCLE_SIM_V1 STATUS phase=IDLE flavor=0 seconds=0 raw=111111 lcd=OK
+CYCLE_SIM_V1 STATUS phase=IDLE flavor=0 seconds=0 raw=111111 lcd=OK
+^C

@@ -1,0 +1,741 @@
+{
+  "date": "16 October 2026",
+  "a": [
+    {
+      "id": "A01",
+      "category": "Controller",
+      "name": "Mega 2560 R3 compatible board + data cable",
+      "spec": "ATmega2560, 5 V logic, full-size Mega 2560 R3 compatible board. Selected seller option: 2560 R3 With Cable; pictured assembled female headers and USB A-to-B cable. Confirm actual USB-serial chip on delivery",
+      "qty": 1,
+      "unit": "set",
+      "price": 699,
+      "status": "SCREENSHOT: selected 2560 R3 With Cable PHP 699, 15 Oct 2026; delivery extra; board not yet tested",
+      "source": "S16",
+      "store": "Shopee PH / SAMIORE.ph (SAMIROB listing)",
+      "why": "Reads buttons and switches, controls timing/driver signals and the I2C LCD. Choose full-size 2560 R3 With Cable for existing layout; compact PRO variants need their own header/pinout check. Buy one controller and reuse it in final build.",
+      "old_id": "A1",
+      "product_url": "https://shopee.ph/product/580325202/15523024357"
+    },
+    {
+      "id": "A04",
+      "category": "Motor drivers",
+      "name": "BTS7960 / IBT-2 bidirectional driver boards",
+      "spec": "User-supplied Shopee IBT-2/BTS7960-type module with two half-bridges forming ONE reversible brushed-DC motor driver per board. Candidate for proposed 12 V motors/5 V control; verify module ratings, running/stall current and cooling. Advertised 43 A is not a verified continuous board rating",
+      "qty": 2,
+      "unit": "pc",
+      "price": 275,
+      "status": "SCREENSHOT PHP 275 per board, 15 Oct 2026; delivery extra. PROVISIONAL: final basket motor/driver match pending",
+      "source": "S17; S18",
+      "store": "Shopee PH / fulabs.ph (FU LABS)",
+      "why": "One board powers and reverses one proposed basket DC motor; two boards cover provisional lift and tilt axes. Double refers to two half-bridges, not two independent motors. A single board is not the matching bipolar-stepper driver. Reuse in final build after validation.",
+      "old_id": "A6",
+      "product_url": "https://shopee.ph/product/1367148707/26183927355"
+    },
+    {
+      "id": "A05",
+      "category": "Flavor motors",
+      "name": "Geared DC motors for three flavor coils",
+      "spec": "ZENG WHCD JGB37-520, selected12V Motor /22RPM, motor-only. Seller table: rated5.5kgf.cm at18RPM/0.30A; no-load22RPM/0.10A, stall1.2A. Advertised37mm class and6mmDshaft. Actual coil fit, torque/duty and current untested.",
+      "qty": 3,
+      "unit": "pc",
+      "price": 352,
+      "status": "USER CONFIRMED same PHP352 for12V22RPM,16Oct2026; prior display AfterVoucher. PHP1056 for3 assumes quoted unit price applies to all three; checkout voucher eligibility/base price and shipping unverified. Provisional final-use candidate.",
+      "source": "S42",
+      "store": "Shopee PH / seller1412288706, ZENG WHCD listing",
+      "why": "One motor turns each flavor coil and stops using its index switch. Selected22RPM option trades speed for greater seller-listed rated torque than35RPM. Replaces prior25GA370 candidate; buy one motor per flavor, not both alternatives. Validate fit, loaded dispensing and LR7843/supply/protection before powered use. Reuse in final machine if validated.",
+      "old_id": "A8",
+      "product_url": "https://shopee.ph/product/1412288706/26828465072"
+    },
+    {
+      "id": "A06",
+      "category": "Flavor drivers",
+      "name": "LR7843 MOSFET flavor-motor driver modules",
+      "spec": "Selected LR7843 module. Seller documents 3 V/5 V signal input, HIGH=ON, LOW=OFF, PWM and DC motor start/stop. Verify actual input current, safe reset/OFF, motor-current/thermal suitability and circuit before final acceptance. Loose terminals/headers pictured",
+      "qty": 3,
+      "unit": "pc",
+      "price": 50,
+      "status": "SCREENSHOT: selected LR7843 PHP 50 each, 15 Oct 2026; delivery extra. Seller documents 5 V control. Motor-current/protection validation pending",
+      "source": "S20; S21",
+      "store": "Shopee PH / fulabs.ph",
+      "why": "One Arduino-commanded module switches each flavor motor. Replaces the old discrete MOSFET/gate assembly, not an additional driver. Buy three once and reuse in final build. Any missing motor flyback protection is listed separately in A06.1.",
+      "old_id": "A9",
+      "product_url": "https://shopee.ph/product/1367148707/41455009761"
+    },
+    {
+      "id": "A06.1",
+      "category": "Flavor-motor protection",
+      "name": "SR5100 motor flyback diodes, ten-piece pack",
+      "spec": "Selected10pcsSR5100 axial Schottky diode pack, nominal5A100V. Three intended12Vflavor-motor positions if suitable onboard path absent; seven spares. Verify delivered markings, actual ratings/thermal suitability and circuit. Alternative to SB560, not additional.",
+      "qty": 1,
+      "unit": "pack",
+      "price": 64,
+      "status": "SCREENSHOT selected10pcsSR5100 PHP64 perpack,qty1,16Oct2026. Budget fullpack;3usedconditionally,7spares. Manufacturer identity/actual quality unverified; shipping extra.",
+      "source": "S43",
+      "store": "KILIMA.ph / Shopee PH",
+      "why": "Provides the motor turn-off recirculation path for each single-direction LR7843 channel if no suitable onboard path is verified. Protects against turn-off spikes, not overload/jam current. One pack covers three motors; do not buy three packs or duplicate SB560. Inspect delivered identity and use within thermal/circuit limits.",
+      "product_url": "https://shopee.ph/product/487295469/11536801341"
+    },
+    {
+      "id": "A07",
+      "category": "Position inputs",
+      "name": "Roller-lever microswitches",
+      "spec": "SHOPO/SHOPOMATIC roller-lever mechanical microswitch, three terminals pictured; exact manufacturer model and COM/NO/NC order unverified. Four provisional basket stops plus three coil indexes. Confirm dimensions/lever travel, reliable low-current contact operation and dry/cool mounting",
+      "qty": 7,
+      "unit": "pc",
+      "price": 22,
+      "status": "SCREENSHOT PHP 22 for 1 piece, 15 Oct 2026; delivery extra. Verify contact functions, low-current reliability and mechanical/environmental fit",
+      "source": "S22",
+      "store": "Shopee PH / SHOPOMATIC.ph",
+      "why": "Four provisional switches sense basket endpoints and three sense flavor-coil indexes so the controller knows when to stop motion. Signal inputs only, not motor/heater power switches or certified emergency-stop contacts. Reuse the same seven in final build; final count depends on existing mechanism.",
+      "old_id": "A10",
+      "product_url": "https://shopee.ph/product/447511770/11436017124"
+    },
+    {
+      "id": "A08",
+      "category": "Operator controls",
+      "name": "Three flavor/start pushbuttons",
+      "spec": "GS normally-open momentary panel pushbutton, selected Model C; two terminals pictured. One per flavor; software accepts one selection per cooking cycle. Confirm mounting-hole/thread dimensions and press/release operation; exact manufacturer model/environmental ratings unverified",
+      "qty": 3,
+      "unit": "pc",
+      "price": 20,
+      "status": "SCREENSHOT: selected Model C PHP 20 per piece, 15 Oct 2026; delivery extra. Confirm mounting dimensions and momentary normally-open contacts",
+      "source": "S23",
+      "store": "Shopee PH / GarageSale01",
+      "why": "One button per flavor requests one packet and starts the timed cooking cycle. Momentary means contacts close only while pressed and release afterward; normally open means disconnected at rest. Reuse all three in final build. Controller signal inputs only; not the A09 emergency stop.",
+      "old_id": "A11",
+      "product_url": "https://shopee.ph/product/8710520/22680277060"
+    },
+    {
+      "id": "A09",
+      "category": "Emergency stop",
+      "name": "LA38 STOP mushroom button \u2014 provisional",
+      "spec": "Selected LA38 STOP, advertised 22 mm mounting. Required: latching emergency stop with documented positive-opening NC contacts, preferably 2 NC. Supplied contact count, release action, exact manufacturer/model and DC control rating unverified; inspect/test on receipt. Bench checks do not establish safety certification",
+      "qty": 1,
+      "unit": "set",
+      "price": 140,
+      "status": "SCREENSHOT: LA38 STOP PHP 140, 15 Oct 2026; delivery extra. PROVISIONAL purchase at user request; not accepted for safety service until requirements verified",
+      "source": "S24",
+      "store": "Shopee PH / liuma.ph",
+      "why": "Operator emergency-stop actuator for the independent hardwired power-stop circuit; does not carry fryer heater current. Check latching/reset and contact operation when received. Replace/add a suitable contact block or documented device if this unit cannot meet the circuit requirements; any extra cost is not yet quoted.",
+      "old_id": "A12",
+      "product_url": "https://shopee.ph/product/459134338/12816027599"
+    },
+    {
+      "id": "A10",
+      "category": "Feedback",
+      "name": "Buzzer and status LED kit",
+      "spec": "5 V active buzzer driven through 2N2222/BC337 with base resistor; red/green LEDs with individual 330-ohm resistors",
+      "qty": 1,
+      "unit": "set",
+      "price": 100,
+      "status": "ESTIMATE 70-180",
+      "source": null,
+      "store": "Alexan / Shopee PH",
+      "why": "Signals warm-up completion, timed cooking, cycle completion and faults. Warm-up completion is an elapsed-time signal, not a measured oil-temperature indication.",
+      "old_id": "A13"
+    },
+    {
+      "id": "A11",
+      "category": "Bench interconnect",
+      "name": "830-point solderless breadboards",
+      "spec": "MB102-style, signal and low-current logic circuits only",
+      "qty": 1,
+      "unit": "pc",
+      "price": 91,
+      "status": "LISTED",
+      "source": "S7",
+      "store": "MakerPH",
+      "why": "Allows temporary low-current signal connections while learning and testing. It must not carry motor current or mains power.",
+      "old_id": "A14"
+    },
+    {
+      "id": "A12",
+      "category": "Bench interconnect",
+      "name": "40-pin jumper wire bundles",
+      "spec": "DuPont-style jumper bundles: one male-male, one male-female and one female-female; target about 20 cm for bench reach, 40 leads per bundle to confirm. Screenshot-selected male-male 10 cm is usable for nearby connections; verify selected length and pack count before checkout",
+      "qty": 3,
+      "unit": "bundle",
+      "price": 49,
+      "status": "PLANNING ESTIMATE PHP 49/bundle: screenshot confirms only male-male 10 cm at PHP 49; other types/lengths and pack count unverified; delivery extra",
+      "source": "S25",
+      "store": "Shopee PH / ENG LAB.ph",
+      "why": "Removable low-current signal connections for controller, breadboard, LCD and module headers. Male ends have exposed pins; female ends have sockets. Buy one bundle of each end combination, not three identical bundles. Not for motor/heater power, permanent safety-stop wiring or final moving harness.",
+      "old_id": "A15",
+      "product_url": "https://shopee.ph/product/1021339444/22577819873"
+    },
+    {
+      "id": "A13",
+      "category": "Logic power",
+      "name": "12 V to 5 V buck converter",
+      "spec": "LM2596S/LM2596 adjustable DC-DC buck module with trim potentiometer; proposed 12 V DC input to regulated 5.0 V output. Logic branch budget below 1 A, subject to actual load/ripple/thermal tests. Verify output before connecting electronics; board continuous rating/authenticity unverified",
+      "qty": 1,
+      "unit": "pc",
+      "price": 35,
+      "status": "SCREENSHOT PHP 35 per module, 15 Oct 2026; delivery extra. Output adjustment, stability and thermal/load check required",
+      "source": "S26; S27",
+      "store": "Shopee PH / Zantop Fiber",
+      "why": "Reduces the motor supply voltage to the 5 V logic rail for controller/LCD/control modules. Adjustable output is not preset to safe 5 V. Reuse one module in final build; not for motors, fryer or direct AC mains. Final controller power connection and USB backfeed prevention will be defined in Phase 2.",
+      "old_id": "A17",
+      "product_url": "https://shopee.ph/product/682614836/23339687631"
+    },
+    {
+      "id": "A14",
+      "category": "DC protection",
+      "name": "Flavor motor DC branch fuse holders and fuses",
+      "spec": "Three provisionalstandardATO/ATCinlineholders atPHP49each=147, plusone10pcpackselected2Astandardbladefuses atPHP66. Threefusepositions+7spares. Confirm>=32VDCratings, actualholderwire/temperature and fusecurve/adaptercoordination; notmains.",
+      "qty": 1,
+      "unit": "set",
+      "price": 213,
+      "status": "SCREENSHOT prices147holders+66fusepack=PHP213 before shipping. Selected2A/10pcpack16Oct2026; actualDCratings/quality unverified. ReplacesPHP180setestimate; remainingmain/logic/basketprotection separatelyunquoted A14.1.",
+      "source": "S44; S45; S30",
+      "store": "ShopeeTopEzlifegoholdercandidate[S44]; WeldingMachinePart.ph2A10pcfusepack[S45]",
+      "why": "Threeholdersandmatching2Astandardfuses provide candidatewireprotectionforflavormotorbranches, notguaranteedjamshutdown. Budgetfull10pcfusepack, notsixloosepiecesor10packs. Finalacceptance requiresactualratingsandadapterfaultresponse; remainingDCprotectionquotedseparately, no glassholderduplicates.",
+      "old_id": "A18",
+      "product_url": "https://shopee.ph/product/599754496/15005730338"
+    },
+    {
+      "id": "A14.1",
+      "category": "Remaining DC protection",
+      "name": "Main, logic and basket DC protection, sizing pending",
+      "spec": "Only additionalDCfuses/holders, protection/distributionterminals and neededpolarityprotection notincluded A14 or B04. Match actualflavoradapterandbasketPSU,currentlimits,wireandstoparrangement. Exactparts/countpending; do not buy duplicatebranchholders.",
+      "qty": 1,
+      "unit": "set",
+      "price": null,
+      "status": "QUOTE NEEDED; no unitemized leftoverassumedwithinA14PHP213selectedparts. Basket protection deferred until A16/A17.1 selection.",
+      "source": null,
+      "store": "PH electrical/electronics supplier; exact ratedparts and quote pending",
+      "why": "Covers remaininginput/logic/basketDCwiringprotection and safeconnections. Threeflavorbranchfusesaloneare not completeDCprotection. Reuseappropriateexistingratedparts, no automaticreverse-polaritymoduleifnotneeded."
+    },
+    {
+      "id": "A15",
+      "category": "Noise suppression",
+      "name": "Passive components and filtering kit",
+      "spec": "Selected: ten 100 nF/0.1 uF 50 V ceramics PHP 30; one 20-piece 1000 uF 25 V pack PHP 69 (up to three initial positions); one selected 16 V 470 uF 8x12 mm 20-piece pack PHP 76 (one initial 5 V buffer). Electrolytic manufacturer/temperature/ESR/ripple specs unverified; inspect and validate intended circuit before final use",
+      "qty": 1,
+      "unit": "set",
+      "price": 200,
+      "status": "PARTLY ITEMIZED: capacitor purchases PHP 30 + PHP 69 + PHP 76 = PHP 175; PHP 25 remaining signal-parts estimate, not a supplier quote. A15 complete allowance PHP 200 retained; delivery extra. Buy one of each pack, not twenty packs",
+      "source": "S31; S32; S33",
+      "store": "Shopee PH: ceramic listing, BCD bulk pack, selected 16V 470uF listing; remaining parts pending",
+      "why": "Ceramics help suppress motor interference and electrolytics buffer brief rail disturbances. Full pack costs are included once even though only up to three bulk and one logic capacitor are initially intended. Final added capacitors and signal parts depend on module/circuit checks. No duplicate A06 MOSFETs, A06.1 diodes or A10 indicator parts.",
+      "old_id": "A19",
+      "product_url": "https://shopee.ph/product/172443349/5245020841"
+    },
+    {
+      "id": "A16",
+      "category": "Basket actuators",
+      "name": "Load-rated basket lift and rotation motors",
+      "spec": "Provisional two 12 V geared DC actuators, one lift and one tilt; exact models depend on existing mechanism torque/speed and power-off retention; do not buy yet",
+      "qty": 2,
+      "unit": "pc",
+      "price": 2000,
+      "status": "ESTIMATE; motor type/count and sizing pending",
+      "source": null,
+      "store": "PH industrial motor supplier / verified Shopee or Lazada seller",
+      "why": "Two provisional actuators lift and rotate the real basket. Use them for cold tests and the final machine instead of buying separate practice motors.",
+      "old_id": "B2"
+    },
+    {
+      "id": "A17",
+      "category": "Motor power",
+      "name": "Enclosed 12 V flavor/control power adapter",
+      "spec": "Regulated12VDC,5A continuous,60W factory-enclosed adapter; ACinput suitable220\u2013230V60Hz, overload/short-circuit protection. Matching DCconnector/polarity/current rating and suitable includedACcord to confirm. Flavor motors and5Vbuck/controls only, not basket motors.",
+      "qty": 1,
+      "unit": "pc",
+      "price": null,
+      "status": "PHYSICAL STORE: user knows supplier,qty1. PRICE TO CONFIRM from actual label/receipt. Retain for final flavor/control branch; not a temporary adapter.",
+      "source": null,
+      "store": "Physical electrical/electronics store chosen by user; store name and price pending",
+      "why": "Powers the three selected12Vflavor motors and logic buck converter during prototype and final use. Five-amp target considers seller-listed3x1.2Astall plus logic allowance; actual motor startup/current response to verify. Basket supply is separately sized as A17.1. No bare ACterminals for beginner bench use.",
+      "old_id": "B3"
+    },
+    {
+      "id": "A17.1",
+      "category": "Basket motor power",
+      "name": "Basket motor power supply, sizing pending",
+      "spec": "Final-use factory-enclosed supply matched to actual A16 basket motors, voltage, start/stall current and independent stop arrangement. Exact voltage/current/model pending; do not buy yet.",
+      "qty": 1,
+      "unit": "pc",
+      "price": null,
+      "status": "QUOTE NEEDED; deferred until basket motors selected. Old PHP1500 shared-supply estimate withdrawn, not an added verified cost or a saving.",
+      "source": null,
+      "store": "PH power-supply supplier; exact model and quote pending",
+      "why": "Provides the basket actuator power separately from the selected flavor/control adapter. Prototype and final use share the chosen basket supply once specified. Both branches must be covered by the final independent power-stop design; avoid duplicate temporary supplies."
+    },
+    {
+      "id": "A18",
+      "category": "Display",
+      "name": "16x2 LCD with I2C backpack",
+      "spec": "ALLAN LCD1602 + I2C module listing: 16 characters x 2 rows, blue-screen display advertised with I2C adapter; rear adapter pictured in thumbnails. Intended 5 V controller system; verify delivered backpack is included/assembled, voltage, chip/address and pin labels before wiring",
+      "qty": 1,
+      "unit": "pc",
+      "price": 120,
+      "status": "SCREENSHOT PHP 120 for one LCD1602+I2C listing, 16 Oct 2026; delivery extra. Confirm complete LCD plus adapter supplied; delivered operation/voltage/address untested",
+      "source": "S34",
+      "store": "Shopee PH / allantimer (ALLAN)",
+      "why": "Displays chosen flavor, warm-up/cooking countdowns, basket/cycle status and faults. I2C adapter reduces signal wiring; reuse this one display in final build. No separate second backpack budgeted. Timed warm-up display does not measure oil temperature.",
+      "product_url": "https://shopee.ph/product/211037329/9786615418"
+    }
+  ],
+  "b": [
+    {
+      "id": "B01",
+      "category": "User-selected fryer",
+      "name": "Single-6L electric deep fryer with basket",
+      "spec": "User-selected DALANDAN LIVING PH Shopee Single-6L; seller advertises 2500 W, 60-200 C dial control, W285 x D435 x H300 mm. Exact manufacturer model/voltage unknown; confirm nameplate, independent overheat cutoff, grounding and fit",
+      "qty": 1,
+      "unit": "set",
+      "price": 1194,
+      "status": "SCREENSHOT: selected Single-6L PHP 1194, 15 Oct 2026; delivery extra; nameplate/protection/fit pending",
+      "source": "S10",
+      "store": "Shopee PH / DALANDAN LIVING PH",
+      "why": "Supplies the cooking tank, heater, temperature control and basket. Replaces the Hanabishi allowance, not a second fryer. Preserve internal controls/protection; confirm basket clearance and allowed external switching. No loose heater is added.",
+      "old_id": "B1"
+    },
+    {
+      "id": "B02",
+      "category": "Permanent electronics",
+      "name": "Mega 2560 screw-terminal prototype shield",
+      "spec": "Selected Welded Board (assembled variant), advertised for full-size Arduino Mega 2560/R3; screw terminals, socket headers and central prototype area pictured. Verify delivered assembly, underside headers, pin mapping/continuity, clearances and power routing before use; no seller-specific schematic/rating established",
+      "qty": 1,
+      "unit": "set",
+      "price": 270,
+      "status": "SCREENSHOT: selected Welded Board PHP 270, 16 Oct 2026; delivery extra. Not the loose DIY Kit option. Actual fit/assembly and electrical checks pending",
+      "source": "S35",
+      "store": "Shopee PH / Aliex IC Store",
+      "why": "Provides permanent low-current controller signal connections using screw terminals, with a solder area for any required small interface parts. Replaces B02 perfboard/carrier/header alternative; do not buy both complete sets. Reuse existing suitable terminals elsewhere. Motor power stays on driver terminals; no mains or safety power-stop current on this board.",
+      "old_id": "B6",
+      "product_url": "https://shopee.ph/product/1391133201/29571601363"
+    },
+    {
+      "id": "B03",
+      "category": "Logic enclosure",
+      "name": "Separated electronics enclosure",
+      "spec": "Approx. 250 x 200 x 100 mm flame-retardant low-voltage box, mounting plate, standoffs and glands; confirm fit/cooling; separate from B09 mains enclosure",
+      "qty": 1,
+      "unit": "set",
+      "price": 1000,
+      "status": "ESTIMATE 700-1600",
+      "source": null,
+      "store": "PH electrical suppliers / Shopee PH",
+      "why": "Protects low-voltage controls from oil splash and accidental contact. Driver cooling and separation from mains wiring must be maintained.",
+      "old_id": "B7"
+    },
+    {
+      "id": "B04",
+      "category": "DC harness",
+      "name": "Permanent DC wiring and moving cables",
+      "spec": "PHYSICAL STORE: flavor12Vfixed power wire18AWG stranded copper, RED3m + BLACK3m =6m initialbench allowance; one matching DCinputsocket/connector documentedfor5A andactualadapterplug/polarity. Separate fixedsignals22AWG: red/black/blue/yellow/white2m each=10m, deferredfullharness. Remaining basket/moving cables and accessories pending.",
+      "qty": 1,
+      "unit": "set",
+      "price": 1150,
+      "status": "ESTIMATE PHP1150 COMPLETE harness retained, not a quote for wire/connector alone. Individual physical-store prices pending. Initial lengths require final route/terminal/protection checks.",
+      "source": null,
+      "store": "Physical electrical/electronics store chosen by user; wire per metre, connector matched with12Vadapter",
+      "why": "Carries flavor motor power separately from low-current signal wiring. Reuse18AWG fixed cable in final flavor branch where suitable. Six metres is red3m plusblack3m, not6m each; existing22AWG10m is a separate signal allowance. Basket/mains/repeated-flex cable not qualified by this choice; buyonlymissingharness accessories withinB04, no duplicate charge.",
+      "old_id": "B8"
+    },
+    {
+      "id": "B05",
+      "category": "Mounting and labeling",
+      "name": "Panel hardware and identification kit",
+      "spec": "Selected Yasen PP Matte A4 180gsm self-adhesive inkjet media, one pack of 20 sheets at PHP 158. For three flavor labels, emergency-stop identification and external switch IDs. Actual printed water/smudge resistance, adhesion and printer compatibility unverified. External sensor bracket/fastener sizes and need pending; exclude B03/B04 duplicate hardware",
+      "qty": 1,
+      "unit": "set",
+      "price": 300,
+      "status": "PARTLY SOURCED: label pack PHP 158 screenshot 16 Oct 2026 + PHP 142 estimated remaining mounting hardware = PHP 300 B05 allowance. Delivery and any paid printing separate; no printing quote assumed",
+      "source": "S36",
+      "store": "Shopee PH / Yasen BrightPrint; external mounting hardware PH hardware shop as needed",
+      "why": "Identifies controls and switch positions; remaining rigid fixtures secure sensors. Full twenty-sheet pack cost included once although one sheet may cover initial labels. No label printer purchase or twenty-pack order. Printed durability must be checked; no food-contact/hot-fryer adhesive rating claimed. Reuse supplied brackets/fasteners where suitable.",
+      "old_id": "B10",
+      "product_url": "https://shopee.ph/product/1541066733/40659010017"
+    },
+    {
+      "id": "B06",
+      "name": "Fryer run contactor K1",
+      "spec": "Provisional CJX2-1810(18A220V), Jayson Electric one; advertised 220 V AC coil, seller states 50-60 Hz and single/three-phase use. Three main poles, ONE NO auxiliary only. Seller Ith32 A is thermal current, not verified AC-1 heater switching rating. Verify exact coil label/voltage range, heater duty and any needed auxiliary block; dimensions advertised 47x87x76 mm",
+      "price": 289,
+      "status": "SCREENSHOT: selected CJX2-1810(18A220V) PHP 289, 16 Oct 2026; delivery extra. PROVISIONAL B06 AC-coil choice, not final heater/control-circuit acceptance",
+      "why": "Candidate normal fryer power switch; internal fryer thermostat/cutoff remain. Replaces the old LS/DC24V-only B06 candidate, not an extra contactor. Coil needs a suitable isolated AC-rated interface, not direct Arduino drive. B07/B08 and reset/stop arrangement must be reconciled before purchasing their dependent parts.",
+      "store": "Shopee PH / Jayson Electric one",
+      "source": "S37",
+      "qty": 1,
+      "unit": "pc",
+      "category": "Power-control materials",
+      "product_url": "https://shopee.ph/product/777946608/42206576962"
+    },
+    {
+      "id": "B07",
+      "name": "Independent power-stop contactor K0",
+      "spec": "Independent power-stop contactor: exact coil/contacts pending review with provisional B06 AC-coil choice; cover fryer and motor-supply input including inrush. Hardwired emergency stop and deliberate reset; verify auxiliary/load-holding arrangement. Do not assume B06 one-NO auxiliary suffices",
+      "price": null,
+      "status": "QUOTE NEEDED; HOLD final coil/stop architecture and combined-load match",
+      "why": "Removes heater and motor-supply power independently of the Arduino. Mechanical load holding is still required when the basket motor loses power.",
+      "store": "PH electrical supplier / Raon; exact supplier quote pending",
+      "source": null,
+      "qty": 1,
+      "unit": "pc",
+      "category": "Power-control materials"
+    },
+    {
+      "id": "B08.1",
+      "name": "Arduino-to-contactor relay interface",
+      "spec": "ENG LAB selected 1-Channels + 5V relay module; seller LOW-trigger, maximum AC250V10A/DC30V10A claims. One-channel board pictured; optocoupler not established. Verify actual driver/input current, startup/reset OFF and mains-to-logic clearances/insulation, AC inductive duty and B06 coil pickup/holding match before any mains use",
+      "price": 49,
+      "status": "SCREENSHOT: selected 1-Channels + 5V PHP49, 16 Oct 2026; delivery extra. PROVISIONAL low-voltage test candidate; HOLD mains-coil acceptance until board/contact/load checks",
+      "why": "Candidate Arduino-controlled switch for B06 contactor coil only, not direct fryer heater switching. Buy one module, replacing old Circuitrocks reference, not both. Relay coil power comes from module supply/driver, not Arduino GPIO. Generic 10A marking and seller LOW-trigger statement do not qualify whole board or guarantee safe OFF.",
+      "store": "Shopee PH / ENG LAB.ph",
+      "source": "S38",
+      "qty": 1,
+      "unit": "pc",
+      "category": "Power-control materials",
+      "product_url": "https://shopee.ph/product/1021339444/22577819886"
+    },
+    {
+      "id": "B08.2",
+      "name": "24 V contactor control supply",
+      "spec": "Candidate genuine MEAN WELL HDR-15-24, 24 V DC 0.63 A / 15.2 W, DIN rail; capacity conditional on actual two-coil pickup/holding loads and temperature derating",
+      "price": 1765.4,
+      "status": "PRIOR LISTED price inc VAT; HOLD: only for retained 24 V control arrangement, not automatic purchase with B06 AC coil",
+      "why": "Conditional control-supply allowance from previous DC-coil plan. An AC-coil contactor does not require this supply for its own coil. Retain only if finalized independent low-voltage stop/control arrangement needs it; remove/replace once whole B07/B08 design settled. Do not buy both alternative schemes.",
+      "store": "RS Philippines / authorized MEAN WELL PH supplier",
+      "source": "S12",
+      "qty": 1,
+      "unit": "pc",
+      "category": "Power-control materials"
+    },
+    {
+      "id": "B08.3",
+      "name": "Hardwired RESET pushbutton",
+      "spec": "LA38-11BN series, selected green + Self-reset, non-illuminated complete panel pushbutton. Seller advertises 22 mm, 1 NO + 1 NC, spring return on release. Label RESET; use appropriate contact after exact block markings, control-voltage/inductive duty and mounting verified. Generic below10A claim is not a verified mains control rating",
+      "price": 62,
+      "status": "SCREENSHOT: selected green + Self-reset PHP62, 16 Oct 2026; delivery extra. PROVISIONAL reset-button selection; actual contacts/duty and final stop/reset circuit pending",
+      "why": "Provides a deliberate reset request after a cleared stop/power interruption. One button, not an extra flavor/start input or emergency mushroom. Reset must not itself start cooking/motion; final hardwired arrangement provides that behavior. No extra contact block or indicator lamp purchased without need.",
+      "store": "Shopee PH / Jayson Electric one",
+      "source": "S39",
+      "qty": 1,
+      "unit": "pc",
+      "category": "Power-control materials",
+      "product_url": "https://shopee.ph/product/777946608/42354881235"
+    },
+    {
+      "id": "B08.4",
+      "name": "Contactor coil suppression accessories",
+      "spec": "Manufacturer-compatible suppression for final AC/DC coil types; check built-in parts first. B06 AC coil needs suitable AC suppression if required, not a plain DC flyback diode. Exact parts/number depend on finalized coil/stop release behavior",
+      "price": null,
+      "status": "QUOTE NEEDED; buy only missing accessories",
+      "why": "Limits coil switch-off voltage spikes. Suppression type affects contactor release time, so a generic diode must not be selected blindly for an emergency-stop circuit.",
+      "store": "PH electrical supplier / Raon; exact supplier quote pending",
+      "source": null,
+      "qty": 1,
+      "unit": "pc",
+      "category": "Power-control materials"
+    },
+    {
+      "id": "B08.5",
+      "name": "Additional control-circuit wire and fuse parts",
+      "spec": "Conditional additional control-branch protection/wire; exact control voltages, ratings and lengths after revised coil/interface/stop design. Mains-rated wiring for any AC-coil branch; do not assume A14 low-current holders suitable; reuse rated parts without duplicates",
+      "price": 150,
+      "status": "ESTIMATE PHP150; HOLD final control-circuit materials, additional pieces only",
+      "why": "Protects and connects the new control-power branch. This is separate from high-current motor wiring already in A14/B04.",
+      "store": "PH electrical supplier / Raon; exact supplier quote pending",
+      "source": null,
+      "qty": 1,
+      "unit": "pc",
+      "category": "Power-control materials"
+    },
+    {
+      "id": "B09.1",
+      "name": "RCBO if existing supply protection is inadequate",
+      "spec": "Candidate CHINT NB4LE 2P C16, Type A, 30 mA, 230/240 V, 6 kA, manufacturer code 292721; current/curve/breaking capacity/frequency and isolation suitability depend on actual circuit",
+      "price": null,
+      "status": "QUOTE NEEDED; need/type to verify at home test outlet",
+      "why": "Combines overload/short-circuit and earth-leakage protection. If a suitable verified device already protects this circuit, do not buy another automatically.",
+      "store": "PH electrical supplier / Raon; exact supplier quote pending",
+      "source": "S14",
+      "qty": 1,
+      "unit": "pc",
+      "category": "Power-control materials"
+    },
+    {
+      "id": "B09.2",
+      "name": "Covered mains enclosure with mounting plate",
+      "spec": "Candidate approx. 300 x 300 x 150 mm suitable metal/plastic electrical enclosure; confirm component clearances, insulation, splash location and metal bonding",
+      "price": 800,
+      "status": "ESTIMATE PHP 500-1200; exact enclosure quote needed",
+      "why": "Houses contactors, control supply and protected mains terminals. This is the mains compartment; B03 already budgets the separate low-voltage electronics box.",
+      "store": "PH electrical supplier / Raon; exact supplier quote pending",
+      "source": null,
+      "qty": 1,
+      "unit": "pc",
+      "category": "Power-control materials"
+    },
+    {
+      "id": "B09.3",
+      "name": "DIN rail and mounting/end-stop kit",
+      "spec": "35 mm DIN rail, lengths determined by layout, end stops and mounting hardware; omit rail supplied with enclosure",
+      "price": 100,
+      "status": "ESTIMATE PHP 50-150; additional pieces only",
+      "why": "Secures contactors/supply/protection in the enclosure. Do not charge for the same mounting hardware again in B05.",
+      "store": "PH electrical supplier / Raon; exact supplier quote pending",
+      "source": null,
+      "qty": 1,
+      "unit": "pc",
+      "category": "Power-control materials"
+    },
+    {
+      "id": "B09.4",
+      "name": "Covered mains terminals and earth bar",
+      "spec": "Two SDE TB-2503 covered 3-pair strips, seller-rated 25 A / 600 V (PHP10 each), plus one Wixim 6-way grounding bar (PHP189). Final conductor acceptance, markings, PE suitability and connection count pending.",
+      "price": 209,
+      "status": "SCREENSHOT PRICES: 2 x PHP10 + 1 x PHP189 = PHP209 before shipping. Mounting/accessories not established as included; avoid duplicate allowances.",
+      "why": "Connects incoming power and appliance branches securely and bonds exposed metal. Protective earth is never switched by the Arduino, a relay or an emergency stop.",
+      "store": "Anigo Trading / Shopee: terminal strips [S40]; JDS ELECTRICAL SUPPLY / Shopee: Wixim earth bar [S41]",
+      "source": "S40, S41",
+      "qty": 1,
+      "unit": "pc",
+      "category": "Power-control materials",
+      "product_url": "https://shopee.ph/product/732230948/23570358234"
+    },
+    {
+      "id": "B09.5",
+      "name": "Mains cord, matching grounded plug and controlled outlet",
+      "spec": "Provisional 3G2.5 mm2 flexible copper cable allowance plus genuine matching grounded 250 V plug/socket rated at least 16 A; actual type, length, ampacity and protection must be checked; retain factory fryer cord",
+      "price": 850,
+      "status": "ESTIMATE PHP 500-1200; lengths and outlet type pending",
+      "why": "Provides a controlled connection for the intact fryer and supply. This is mains wiring, separate from B04 DC harness; no cheap ungrounded or universal adapter is presumed suitable.",
+      "store": "PH electrical supplier / Raon; exact supplier quote pending",
+      "source": null,
+      "qty": 1,
+      "unit": "pc",
+      "category": "Power-control materials"
+    },
+    {
+      "id": "B09.6",
+      "name": "Mains cable glands, ferrules and identification",
+      "spec": "Mains-compartment strain relief, appropriately sized ferrules/sleeves and wire labels; only pieces not included with enclosure/other kits",
+      "price": 150,
+      "status": "ESTIMATE PHP 100-250; avoid duplicate kits",
+      "why": "Keeps cables from pulling out and makes connections identifiable. B04/B05 already cover DC/external sensor pieces; these are additional mains-only parts.",
+      "store": "PH electrical supplier / Raon; exact supplier quote pending",
+      "source": null,
+      "qty": 1,
+      "unit": "pc",
+      "category": "Power-control materials"
+    }
+  ],
+  "c": [
+    {
+      "id": "C01",
+      "name": "Qualified electrical review and inspection",
+      "spec": "User assembles; qualified school instructor/electrician reviews design and checks mains/earth/protection/stop before energizing; paid assistance only if actually hired",
+      "qty": 1,
+      "price": null,
+      "status": "QUOTE NEEDED; school support may replace paid service if available",
+      "store": "Qualified school supervisor / licensed electrician",
+      "why": "A separate review/inspection service, not automatic outside assembly labor. School support may be available; no cost or availability is assumed."
+    },
+    {
+      "id": "C02",
+      "name": "Delivery/shipping",
+      "spec": "Actual seller delivery charges after orders are grouped",
+      "qty": 1,
+      "price": null,
+      "status": "QUOTE NEEDED",
+      "store": "Chosen suppliers/couriers",
+      "why": "Delivery is a fee, not an electronic part. Do not charge it inside material unit prices again."
+    },
+    {
+      "id": "C03",
+      "name": "User assembly labor",
+      "spec": "User will assemble the machine electronics/electrical controls with guidance; qualified mains review before energizing",
+      "qty": 1,
+      "price": 0,
+      "status": "DIY: no outside assembly fee budgeted",
+      "store": "User",
+      "why": "No external assembly labor fee is included. Material costs remain payable; any separately paid inspection/help belongs in C01."
+    }
+  ],
+  "sources": [
+    {
+      "id": "S7",
+      "label": "MakerPH 830-point breadboard, PHP 91",
+      "url": "https://www.makerph.com/product/full-size-breadboard-830-holes/"
+    },
+    {
+      "id": "S10",
+      "label": "User screenshot 15 Oct 2026: DALANDAN LIVING PH selected Single-6L PHP 1194; advertised 2500 W, 60-200 C, W285 D435 H300 mm; nameplate/cutoff/earth unverified",
+      "url": "https://shopee.ph/product/1303238794/40333822650"
+    },
+    {
+      "id": "S12",
+      "label": "RS PH HDR-15-24, PHP 1765.40 inc. VAT; control supply capacity conditional",
+      "url": "https://ph.rs-online.com/web/p/din-rail-power-supplies/1457862"
+    },
+    {
+      "id": "S13",
+      "label": "LS ELECTRIC Metasol manufacturer catalog: coil variants/characteristics; exact supplied product must match",
+      "url": "https://www.ls-electric.com/upload/customer/download/1416/Metasol_MC_E_1310.pdf"
+    },
+    {
+      "id": "S14",
+      "label": "CHINT manufacturer NB4LE: 2P C16 Type A 30mA 6kA code 292721; local price/need unverified",
+      "url": "https://www.chintglobal.com/content/dam/chint/global/product-center/low-voltage/iec/final-power-distribution/rcbo/nb4le/catalog/NB4LE-RCBO-Catalog.pdf"
+    },
+    {
+      "id": "S15",
+      "label": "MEAN WELL HDR-15 manufacturer specifications, including HDR-15-24 and temperature derating",
+      "url": "https://www.meanwell.com/Upload/PDF/HDR-15/HDR-15-SPEC.PDF"
+    },
+    {
+      "id": "S16",
+      "label": "User screenshot 15 Oct 2026: Shopee SAMIORE.ph/SAMIROB selected 2560 R3 With Cable PHP 699; pictured full-size board, assembled headers and USB A-to-B cable. Shipping extra; actual board/USB-serial chip untested.",
+      "url": "https://shopee.ph/product/580325202/15523024357"
+    },
+    {
+      "id": "S17",
+      "label": "User screenshot 15 Oct 2026: fulabs.ph/FU LABS Shopee Double BTS7960 IBT-2-type board PHP 275 each. Two boards budgeted; final motor current/voltage and module cooling/quality unverified.",
+      "url": "https://shopee.ph/product/1367148707/26183927355"
+    },
+    {
+      "id": "S18",
+      "label": "Infineon BTS7960 manufacturer datasheet: each IC is a half-bridge; typical 43 A current limitation is not a continuous rating for a marketplace module. IC data do not establish this seller board quality or ratings.",
+      "url": "https://www.infineon.com/assets/row/public/documents/10/57/infineon-bts7960-ds-en.pdf"
+    },
+    {
+      "id": "S19",
+      "label": "User screenshot 15 Oct 2026: Shopee seller 156048989 25GA-370, selected 12V 30RPM PHP 214 each; shipping section says PRE-ORDER ships in 5 days. Three units budgeted; torque/current/shaft/loaded-coil performance unverified.",
+      "url": "https://shopee.ph/product/156048989/2380743022"
+    },
+    {
+      "id": "S20",
+      "label": "User screenshots 15 Oct 2026: fulabs.ph selected LR7843 PHP 50; description supports 3 V/5 V signals, HIGH=ON, LOW=OFF, PWM and DC motors. Terminals/headers loose. Motor-current rating, actual safe OFF and suitable flyback path still need validation.",
+      "url": "https://shopee.ph/product/1367148707/41455009761"
+    },
+    {
+      "id": "S21",
+      "label": "Infineon IRLR7843 manufacturer reference: 30 V logic-level MOSFET, low on-resistance characterized at 4.5 V gate drive. IC specification does not prove seller-module input threshold, continuous current or isolation/protection.",
+      "url": "https://www.infineon.com/part/IRLR7843"
+    },
+    {
+      "id": "S22",
+      "label": "User screenshot 15 Oct 2026: SHOPOMATIC.ph SHOPO roller-lever microswitch PHP 22 per piece, explicitly 1 piece per order. Three terminals pictured; actual model/contact ordering, low-current reliability, dimensions and sealing unverified.",
+      "url": "https://shopee.ph/product/447511770/11436017124"
+    },
+    {
+      "id": "S23",
+      "label": "User screenshot 15 Oct 2026: GarageSale01 GS normally-open momentary pushbutton, selected Model C PHP 20 per piece. Two terminals pictured; mounting dimensions, actual contact operation and environmental ratings unverified. Shipping extra.",
+      "url": "https://shopee.ph/product/8710520/22680277060"
+    },
+    {
+      "id": "S24",
+      "url": "https://shopee.ph/product/459134338/12816027599",
+      "label": "User screenshots 15 Oct 2026: liuma.ph selected LA38 STOP PHP 140. Seller claims LA38 22 mm, generic 10 A and CCC; no verified positive-opening documentation, NC count or latching release. Provisional purchase; not approved safety performance."
+    },
+    {
+      "id": "S25",
+      "url": "https://shopee.ph/product/1021339444/22577819873",
+      "label": "User screenshots 15 Oct 2026: ENG LAB.ph DuPont jumper listing; selected male-male 10 cm PHP 49. Other male/female combinations and lengths pictured; exact pack count and other variant prices unverified. A12 PHP 49 each for three mixed bundles is a planning estimate, not three verified quotes."
+    },
+    {
+      "id": "S26",
+      "url": "https://shopee.ph/product/682614836/23339687631",
+      "label": "User screenshot 15 Oct 2026: Zantop Fiber LM2596S/LM2596 adjustable step-down module PHP 35. Trim potentiometer and input/output pads pictured. Delivered chip, output stability and continuous module rating unverified; delivery extra."
+    },
+    {
+      "id": "S27",
+      "url": "https://www.ti.com/product/LM2596",
+      "label": "TI LM2596 manufacturer reference: adjustable step-down regulator supports 5 V conversion from 12 V. IC specifications do not establish seller board authenticity or continuous current; verify board output/load/temperature."
+    },
+    {
+      "id": "S28",
+      "url": "https://shopee.ph/product/1367148707/51251146553",
+      "label": "User screenshot 15 Oct 2026: fulabs.ph selected 5pcs 5x20 Fuse Holder PHP 68. Title advertises 22 AWG leads and 220 V; actual conductor, current/DC rating and fuse inclusion unverified. Candidate for low-current branch only; not basket/heater approval."
+    },
+    {
+      "id": "S29",
+      "url": "https://shopee.ph/product/1367148707/29688422693",
+      "label": "User screenshot 15 Oct 2026: fulabs.ph glass fuse listing displays PHP 35, 5x20 mm/6x30 mm 10-packs and current options. No size/current selected. Not assumed mixed assortment or exact purchase price; DC/interrupting rating and time curve unverified."
+    },
+    {
+      "id": "S30",
+      "url": "https://www.littelfuse.com/products/fuses-overcurrent-protection/fuses",
+      "label": "Littelfuse manufacturer fuse selection guidance: match AC/DC application voltage, current and interrupting capacity. Generic seller 250 V marking alone does not establish DC suitability; manufacturer guidance does not rate these seller products."
+    },
+    {
+      "id": "S31",
+      "url": "https://shopee.ph/product/172443349/5245020841",
+      "label": "User screenshot 16 Oct 2026: selected 100nF/0.1uF ceramic capacitor, advertised 50 V, PHP 3 each; quantity ten shown, total PHP 30. Sold per piece; MOQ six shown, wholesale PHP 3 for >=seven. Delivered value/quality untested. This is only the ceramic portion of A15."
+    },
+    {
+      "id": "S32",
+      "url": "https://shopee.ph/product/284375565/4543014643",
+      "label": "User screenshot 16 Oct 2026: BCD Electronics Shop 20PCS/SET 1000 uF 25 V, advertised 10x20 mm, PHP 69 per pack of twenty. User chooses this pack provisionally; up to three initially proposed, but budget full pack cost. Temperature/ESR/ripple/manufacturer data unverified. PHP 69 included within A15 allowance, not added twice."
+    },
+    {
+      "id": "S33",
+      "url": "https://shopee.ph/product/487295469/10833769858",
+      "label": "User screenshot 16 Oct 2026: selected 16V 470UF 8x12mm 20PCS option PHP 76 per pack; order quantity one. One capacitor initially proposed on 5 V branch, not twenty needed. Temperature/ESR/ripple/manufacturer data not established by generic image. Full pack PHP 76 included within A15 allowance."
+    },
+    {
+      "id": "S34",
+      "url": "https://shopee.ph/product/211037329/9786615418",
+      "label": "User screenshot 16 Oct 2026: allantimer/ALLAN LCD1602+I2C listing PHP 120, blue display and rear backpack thumbnails. Advertises complete 1602/I2C module; confirm delivered adapter inclusion/assembly, electrical ratings and I2C address. Replaces prior Makerlab PHP 150 source; buy one display only."
+    },
+    {
+      "id": "S35",
+      "url": "https://shopee.ph/product/1391133201/29571601363",
+      "label": "User screenshot 16 Oct 2026: Aliex IC Store MEGA2560 screw-terminal/prototype shield, selected Welded Board PHP 270, quantity one. Assembled terminals/socket headers and prototype area pictured. Actual underside connectors, Mega fit/pin mapping/power routing and assembly quality unverified. Replaces B02 PHP 350 kit allowance, no second perfboard kit."
+    },
+    {
+      "id": "S36",
+      "url": "https://shopee.ph/product/1541066733/40659010017",
+      "label": "User screenshot 16 Oct 2026: Yasen BrightPrint selected PP Matte A4 180gsm, 20 self-adhesive sheets, PHP 158 per pack, quantity one. Inkjet media advertised as waterproof/vinyl in title; exact selected option says PP. Printed-ink water/oil/heat resistance and adhesion unverified; printing/shipping not included. PHP 158 inside B05 allowance."
+    },
+    {
+      "id": "S37",
+      "url": "https://shopee.ph/product/777946608/42206576962",
+      "label": "User screenshots 16 Oct 2026: Jayson Electric one selected CJX2-1810(18A220V) PHP289; description states Ith32A, 18A three-phase motor figures, three main contacts, ONE NO auxiliary, Ui690VAC and 50-60Hz. Ith/Ui are not proof of heater AC-1 rating or exact coil operating range. Provisional B06 AC-coil choice; B07/B08/interface/stop review pending."
+    },
+    {
+      "id": "S38",
+      "url": "https://shopee.ph/product/1021339444/22577819886",
+      "label": "User screenshots 16 Oct 2026: ENG LAB selected 1-Channels + 5V relay module PHP49, qty1. Seller LOW-trigger, AC250V10A/DC30V10A maximum claims. One-channel optocoupler, board mains separation, actual driver/current/reset behavior and AC inductive duty unverified. Provisional B08.1 low-voltage test candidate, not mains approval."
+    },
+    {
+      "id": "S39",
+      "url": "https://shopee.ph/product/777946608/42354881235",
+      "label": "User screenshots 16 Oct 2026: Jayson Electric one LA38-11BN listing selected green + Self-reset PHP62, qty1. Seller states22mm, 1NO+1NC, springreturn and generic below10A. Actual block voltage/utilization rating, markings and final reset-circuit suitability unverified. Provisional B08.3."
+    },
+    {
+      "id": "S40",
+      "url": "https://shopee.ph/product/732230948/23570358234",
+      "label": "User screenshot 16 Oct 2026: Anigo Trading/SDE selected TB-2503 (3PAIRS) 25A at PHP10 each. Provisional two strips PHP20; description states600V, clear covers pictured. Actual conductor range, termination method/torque and markings pending. Earth bar separate and unquoted; PHP20 included within B09.4 PHP200 allowance."
+    },
+    {
+      "id": "S41",
+      "url": "https://shopee.ph/product/268117918/15457423948",
+      "label": "User screenshot 16 Oct 2026: JDS ELECTRICAL SUPPLY/Wixim selected 6ways grounding bus bar PHP189, qty1. Seller claims copper, 8mm holes, up to #8AWG. Minimum conductor size, stranded-wire clamping, torque and PE suitability unverified. Blue insulating feet pictured; enclosure bonding must be provided by final design. No purchase reported."
+    },
+    {
+      "id": "S42",
+      "url": "https://shopee.ph/product/1412288706/26828465072",
+      "label": "User screenshots16Oct2026 and follow-up confirm same PHP352 for12VMotor/22RPM. Displayed price is AfterVoucher; quantity-three eligibility/base price/shipping unverified. Seller12V table:22RPM free,18RPM at5.5kgf.cm/0.30A,1.2Astall. Claimed37mm class/6mmDshaft; actual motor performance/fit untested. Replaces formerA05 sourceS19/25GA370, not additional motors."
+    },
+    {
+      "id": "S43",
+      "url": "https://shopee.ph/product/487295469/11536801341",
+      "label": "User screenshot16Oct2026 selects10pcsSR5100 PHP64,qty1pack. Description specifiesSR51005A100V; title contains conflicting ratings, actualmanufacturer/identity unverified. Budget fullpackfor3conditionalmotorpositionsplus7spares, alternative toSB560. No purchase reported."
+    },
+    {
+      "id": "S44",
+      "url": "https://shopee.ph/product/599754496/15005730338",
+      "label": "User screenshots16Oct2026: inlineATO/ATCstandardbladeholder PHP49each, package1holder excludingbladefuse. Seller30cm,copper,16AWGspec vs14AWGfeatureconflict; fits1\u201330Afuses, operatingtemperature30C ambiguous. NoDCvoltage/currentrating shown. Threeprovisionalholders PHP147 withinA14estimate180, not finalqualification. Actualwire/rating/terminalfit and fusecurve/adapterfaultresponse pending."
+    },
+    {
+      "id": "S45",
+      "url": "https://shopee.ph/product/1218437594/26470926816",
+      "label": "User screenshot16Oct2026: WeldingMachinePart.phselected2A+10pcsstandard/mediumbladefusepackPHP66,orderqty1. Titlezincpins; no32VDCrating, manufacturer/timecurve/interruptingrating shown. Threeintendedpositions+7spares, actualfit/rating and selectedadapterfaultcoordinationpending. Conditionalcandidate, not independentlytested."
+    }
+  ]
+}

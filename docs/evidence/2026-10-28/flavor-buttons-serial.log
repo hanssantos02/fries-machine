@@ -1,0 +1,29 @@
+Monitor port settings:
+  baudrate=115200
+  bits=8
+  dtr=on
+  parity=none
+  rts=on
+  stop_bits=1
+
+Connecting to /dev/ttyUSB0. Press CTRL-C to exit.
+�Ǵ!�.�>ʺ
+!1@���� ��� ݞ���Ⱥ�bȂ��6FLAVOR_BUTTONS_V1 boot: inputs22,23,24; LCD0x27 SDA20 SCL21
+FLAVOR_BUTTONS_V1 READY: 35ms debounce, hold counts once.
+Press one physical button at a time. ? prints input status.
+FLAVOR_BUTTONS_V1 STATUS raw=111 counts=0,0,0 lcd=OK
+FLAVOR_BUTTONS_V1 STATUS raw=111 counts=0,0,0 lcd=OK
+FLAVOR_BUTTONS_V1 STATUS raw=111 counts=0,0,0 lcd=OK
+FLAVOR_BUTTONS_V1 STATUS raw=111 counts=0,0,0 lcd=OK
+FLAVOR_BUTTONS_V1 STATUS raw=111 counts=0,0,0 lcd=OK
+?
+FLAVOR_BUTTONS_V1 STATUS raw=111 counts=0,0,0 lcd=OK
+FLAVOR_BUTTONS_V1 STATUS raw=111 counts=0,0,0 lcd=OK
+FLAVOR_BUTTONS_V1 STATUS raw=111 counts=0,0,0 lcd=OK
+FLAVOR_BUTTONS_V1 STATUS raw=111 counts=0,0,0 lcd=OK
+FLAVOR_BUTTONS_V1 STATUS raw=111 counts=0,0,0 lcd=OK
+FLAVOR_BUTTONS_V1 STATUS raw=111 counts=0,0,0 lcd=OK
+FLAVOR_BUTTONS_V1 STATUS raw=111 counts=0,0,0 lcd=OK
+FLAVOR_BUTTONS_V1 STATUS raw=111 counts=0,0,0 lcd=OK
+FLAVOR_BUTTONS_V1 STATUS raw=111 counts=0,0,0 lcd=OK
+^C

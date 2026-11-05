@@ -1,0 +1,16 @@
+{
+  "date": "2026-10-28",
+  "source": "read-only /dev and sysfs inspection",
+  "port": "/dev/ttyUSB0",
+  "vid": "1a86",
+  "pid": "7523",
+  "product": "USB Serial",
+  "kernel_driver": "ch341-uart",
+  "read_access": true,
+  "write_access": true,
+  "user_observation": {
+    "ON": "lit",
+    "L": "blinking"
+  },
+  "diagnostic_uploaded": false
+}

@@ -1,0 +1,9 @@
+{
+  "port": "/dev/ttyUSB0",
+  "exists": true,
+  "read": true,
+  "write": true,
+  "idVendor": "1a86",
+  "idProduct": "7523",
+  "product": "USB Serial"
+}

@@ -1,0 +1,40 @@
+Monitor port settings:
+  baudrate=115200
+  bits=8
+  dtr=on
+  parity=none
+  rts=on
+  stop_bits=1
+
+Connecting to /dev/ttyUSB0. Press CTRL-C to exit.
+LCD_TEXT_TEST_V1 boot: address=0x27, 16x2, SDA20 SCL21
+LCD_TEXTLCD_TEXT_TEST_V1 boot: address=0x27, 16x2, SDA20 SCL21
+LCD_TEXT_TEST_V1 READY: confirm readable title and seconds.
+LCD_TEXT_TEST_V1 seconds=1
+LCD_TEXT_TEST_V1 seconds=2
+LCD_TEXT_TEST_V1 seconds=3
+LCD_TEXT_TEST_V1 seconds=4
+LCD_TEXT_TEST_V1 seconds=5
+LCD_TEXT_TEST_V1 seconds=6
+LCD_TEXT_TEST_V1 seconds=7
+LCD_TEXT_TEST_V1 seconds=8
+LCD_TEXT_TEST_V1 seconds=9
+LCD_TEXT_TEST_V1 seconds=10
+LCD_TEXT_TEST_V1 seconds=11
+LCD_TEXT_TEST_V1 seconds=12
+LCD_TEXT_TEST_V1 seconds=13
+LCD_TEXT_TEST_V1 seconds=14
+LCD_TEXT_TEST_V1 seconds=15
+LCD_TEXT_TEST_V1 seconds=16
+LCD_TEXT_TEST_V1 seconds=17
+LCD_TEXT_TEST_V1 seconds=18
+LCD_TEXT_TEST_V1 seconds=19
+LCD_TEXT_TEST_V1 seconds=20
+LCD_TEXT_TEST_V1 seconds=21
+LCD_TEXT_TEST_V1 seconds=22
+LCD_TEXT_TEST_V1 seconds=23
+LCD_TEXT_TEST_V1 seconds=24
+LCD_TEXT_TEST_V1 seconds=25
+LCD_TEXT_TEST_V1 seconds=26
+LCD_TEXT_TEST_V1 seconds=27
+^C

@@ -1,0 +1,1 @@
+PASS: all flavors, selected index, release-before-index, busy lockout, timing boundaries, timeout latch/reset, rollover and real debounce/controller chain.

@@ -1,0 +1,20 @@
+# Machine-local toolchains, downloads, build outputs and credentials
+.tools/
+.build/
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Scratch renders/exports are reproducible; retain original BOM authoring sources.
+tmp/*
+!tmp/bom/
+tmp/bom/*
+!tmp/bom/*.py
+!tmp/bom/*.mjs
+!tmp/bom/*.json
+
+__pycache__/
+*.pyc
+.DS_Store
