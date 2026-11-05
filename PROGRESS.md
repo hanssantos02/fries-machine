@@ -77,7 +77,7 @@ User will resume assembly in a **new chat**. Persistent resume source: `docs/han
 
 USB logic checks passed; preserve source and working inputs/LCD/common signalGND. Before a protected single flavor-channel test, actual module terminal topology, power wiring/connector ratings, fuse/diode suitability, safe-OFF/reset, secure unloaded mounting and independent disconnect still need review. Driver GPIO is not assigned. No motor current through breadboard/DuPont leads or12V on Mega5V/LCD rails. STOP selection is not safety acceptance; no new STOP/A10/LM2596/redwire/switch receipt reported. No device operation, flash, install or Phase3 authorization from this handoff.
 
-The GitHub destination supplied by user is `https://github.com/hanssantos02/fries-machine.git`, branch `main`. Folder initially had no.git; initialized/fetched remote and based localmain on original README commit2e5c478 without changing existing project files. User explicitly requests commit/push main; preserve history, no force push or new PR. Final publication status is recorded in the save log below.
+The GitHub destination supplied by user is `https://github.com/hanssantos02/fries-machine.git`, branch `main`. Folder initially had no.git; initialized/fetched remote and based localmain on original README commit2e5c478 without changing existing project files. User explicitly requests commit/push main; preserve history, no force push or new PR. Publication status is recorded in the save log below; checkpoint18ebf34 was pushed and remote-verified on5November.
 
 ## Historical work log
 
@@ -959,3 +959,10 @@ Earlier statements below about no received parts or no Phase 2 approval apply to
 **5 November 2026 update:** user now owns one 12 V adapter and reports measuring **12 V DC**. Exact model, label current/power rating, enclosure type, connector size/polarity, load during measurement and loaded regulation/protection are not supplied. Planned A17 is enclosed regulated 12 V / 5 A / 60 W, but those ratings are not established by the voltage reading. Do not rebuy it automatically. No motor connection/test is reported.
 
 Prepared a project-local persistent handoff and README entry, corrected active inventory/BOM/shopping/resume state, retained dated records as history, and copied original small bench evidence from ignored `.build/logs` to `docs/evidence/2026-10-28`. Toolchain/downloads/build binaries and generated scratch renders are excluded from Git. Source firmware is unchanged. Pre-commit validation passed: uploaded simulation source matches all3original hashes, all40BOM rows remain covered, README links resolve, and archived logs are byte-identical. Sources/docs/assets/evidence are being saved onmain, preserving original README history. Final push success must be verified against remoteHEAD; no new hardware test or setup performed.
+
+
+### Git publication verified — 5 November 2026
+
+Checkpoint commit `18ebf34f3c15451fd46daa7cf6be663c035dcd86` (`docs: preserve prototype progress and adapter assembly handoff`) was pushed to `main`. `git ls-remote origin refs/heads/main` matched that full hash and the working tree was clean. HTTPS push initially lacked credentials; existing SSH authentication as hanssantos02 succeeded, so the same repository uses HTTPS fetch and SSH push locally. No credentials installed, no force push, no PR, no hardware operation. Original root commit2e5c478 is retained.
+
+This publication note is a small follow-up documentation commit; the subsequent final HEAD and remote equality can be checked with Git. Persistent resume file: `docs/handoffs/2026-11-05-assembly-resume.md`, also linked from README. It captures passed USB tests, exact pins/current firmware, latest adapter receipt, current purchasing decisions, and Step26 label/polarity/current-rating checkpoint. Local tool/build caches are intentionally ignored; portable original evidence is committed under `docs/evidence`.
